@@ -17,11 +17,16 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ASAD Gıda Sanayi | Global Coffee Industry Leaders">
     <meta name="twitter:description" content="From bean origins to global cups. Türkiye's leading coffee industry group.">
+    <meta name="twitter:image" content="https://www.asadlimited.com/images/toptan-wholesale.jpg">
+    <meta property="og:image" content="https://www.asadlimited.com/images/toptan-wholesale.jpg">
     <meta name="robots" content="index, follow">
     <meta name="author" content="ASAD Gıda Sanayi Ltd.">
     <meta name="keywords" content="coffee export, green bean, wholesale coffee, café franchising, coffee consultancy, Türkiye coffee, ASAD Gıda, ToptanKahveler, FrancesCoffee, Roasted.com">
     <link rel="canonical" href="https://asadlimited.com">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%232563EB'/%3E%3Cstop offset='100%25' stop-color='%2338BDF8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M8 22 L16 8 L24 22 Z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cline x1='11' y1='18' x2='21' y2='18' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+    <link rel="dns-prefetch" href="https://francescoffee.com.tr">
+    <link rel="dns-prefetch" href="https://www.toptankahveler.com">
+    <link rel="manifest" href="manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -122,6 +127,7 @@
         /* ── HERO ── */
         .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 5rem;background:linear-gradient(135deg,rgba(15,23,42,.84),rgba(30,64,175,.72)),url('https://images.unsplash.com/photo-1524350876685-274059332603?w=1920&q=80') center/cover no-repeat}
         .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--white),transparent);z-index:1}
+        .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");z-index:1;pointer-events:none}
 
         /* Animated mesh blobs */
         .hero-blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.15;animation:float 10s ease-in-out infinite}
@@ -234,7 +240,7 @@
         .brands{padding:6rem 0;background:var(--white)}
         .brands-header{text-align:center;margin-bottom:3.5rem}
         .brands-header .section-subtitle{margin:0 auto}
-        .brands-showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+        .brands-showcase{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
 
         .brand-card{background:var(--white);border-radius:20px;overflow:hidden;transition:all .5s var(--ease);position:relative}
         .brand-card::before{content:'';position:absolute;inset:-1px;border-radius:20px;padding:1px;background:linear-gradient(135deg,var(--blue-300),transparent 40%,transparent 60%,var(--sky-400));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .5s}
@@ -437,7 +443,7 @@
         @media(max-width:1024px){
             .hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-visual{max-width:340px;margin:0 auto}
             .about-grid,.global-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem}.about-visual{max-width:360px;margin:0 auto}
-            .services-grid{grid-template-columns:repeat(2,1fr)}.brands-showcase{grid-template-columns:1fr;max-width:440px;margin:0 auto}
+            .services-grid{grid-template-columns:repeat(2,1fr)}.brands-showcase{grid-template-columns:repeat(2,1fr)}
             .process-timeline{grid-template-columns:repeat(3,1fr);gap:1.5rem}.process-timeline::before{display:none}
             .footer-grid{grid-template-columns:1fr 1fr}
         }
@@ -536,7 +542,31 @@
         [dir="rtl"] .section-subtitle{text-align:right}
         [dir="rtl"] .about-text p{text-align:right}
         [dir="rtl"] .bean-divider-grid{direction:rtl}
+
+        /* ── WHATSAPP BUTTON ── */
+        .whatsapp-btn{position:fixed;bottom:2rem;left:2rem;width:52px;height:52px;border-radius:50%;background:#25D366;color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:900;box-shadow:0 4px 15px rgba(37,211,102,.4);transition:all .3s}.whatsapp-btn:hover{transform:scale(1.1);box-shadow:0 6px 20px rgba(37,211,102,.5)}
+
+        /* ── COOKIE BANNER ── */
+        .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--slate-900);color:var(--slate-300);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:9998;transform:translateY(100%);transition:transform .4s var(--ease);font-size:.82rem;flex-wrap:wrap}.cookie-banner.visible{transform:translateY(0)}.cookie-banner p{flex:1;min-width:200px;line-height:1.5}.cookie-accept{padding:.5rem 1.2rem;background:var(--blue-500);color:white;border:none;border-radius:8px;cursor:pointer;font-family:var(--heading);font-weight:600;font-size:.8rem;transition:background .3s;white-space:nowrap}.cookie-accept:hover{background:var(--blue-600)}.cookie-decline{padding:.5rem 1.2rem;background:transparent;color:var(--slate-400);border:1px solid var(--slate-700);border-radius:8px;cursor:pointer;font-family:var(--heading);font-weight:600;font-size:.8rem;transition:all .3s;white-space:nowrap}.cookie-decline:hover{border-color:var(--slate-500);color:var(--slate-200)}
+
+        /* ── FAQ ── */
+        .faq{padding:6rem 0;background:var(--white)}.faq-header{text-align:center;margin-bottom:2.5rem}.faq-grid{max-width:800px;margin:0 auto}.faq-item{border:1px solid var(--slate-200);border-radius:12px;margin-bottom:.65rem;overflow:hidden;transition:border-color .3s}.faq-item:hover{border-color:var(--blue-300)}.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;cursor:pointer;font-family:var(--heading);font-size:.9rem;font-weight:600;color:var(--slate-800);background:var(--white);border:none;width:100%;text-align:left;transition:background .3s}.faq-q:hover{background:var(--slate-50)}.faq-q svg{width:20px;height:20px;stroke:var(--slate-400);fill:none;stroke-width:2;transition:transform .3s;flex-shrink:0}.faq-item.open .faq-q svg{transform:rotate(180deg)}.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}.faq-a-inner{padding:0 1.25rem 1.15rem;font-size:.86rem;color:var(--slate-500);line-height:1.7}
+
+        /* ── PARTNERS ── */
+        .partners{padding:3rem 0;background:var(--white);border-top:1px solid var(--slate-100)}.partners-inner{display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap;opacity:.5;filter:grayscale(1);transition:all .3s}.partners-inner:hover{opacity:.8;filter:grayscale(.3)}.partner-logo{height:35px;object-fit:contain}
+
+        /* ── TEAM ── */
+        .team{padding:6rem 0;background:var(--slate-50)}.team-header{text-align:center;margin-bottom:2.5rem}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto}.team-card{text-align:center;padding:2rem 1.25rem;background:var(--white);border:1px solid var(--slate-200);border-radius:16px;transition:all .3s}.team-card:hover{border-color:var(--blue-300);transform:translateY(-4px);box-shadow:var(--shadow-md)}.team-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--blue-500),var(--blue-600));display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;font-family:var(--heading);font-size:1.5rem;font-weight:700;color:white}.team-card h4{font-family:var(--heading);font-size:.92rem;font-weight:600;color:var(--slate-800);margin-bottom:.15rem}.team-card p{font-size:.72rem;color:var(--slate-500)}@media(max-width:768px){.team-grid{grid-template-columns:1fr;max-width:320px}}
+
+        /* ── NEWS ── */
+        .news{padding:6rem 0;background:var(--white)}.news-header{text-align:center;margin-bottom:2.5rem}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}.news-card{border:1px solid var(--slate-200);border-radius:16px;overflow:hidden;transition:all .3s}.news-card:hover{border-color:var(--blue-200);transform:translateY(-3px);box-shadow:var(--shadow-md)}.news-img{height:180px;background-size:cover;background-position:center}.news-body{padding:1.25rem}.news-date{font-family:var(--mono);font-size:.65rem;color:var(--blue-600);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem}.news-card h4{font-family:var(--heading);font-size:.92rem;font-weight:600;color:var(--slate-800);margin-bottom:.4rem;line-height:1.35}.news-card p{font-size:.78rem;color:var(--slate-500);line-height:1.6}@media(max-width:768px){.news-grid{grid-template-columns:1fr}}
+
+        /* ── LEGAL MODALS ── */
+        .legal-modal{position:fixed;inset:0;z-index:9999;background:rgba(15,23,42,.6);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:2rem}.legal-modal.open{display:flex}.legal-content{background:var(--white);border-radius:20px;max-width:700px;width:100%;max-height:80vh;overflow-y:auto;padding:2.5rem;position:relative}.legal-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;background:var(--slate-100);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s}.legal-close:hover{background:var(--slate-200)}.legal-close svg{width:18px;height:18px;stroke:var(--slate-500);fill:none;stroke-width:2}.legal-content h2{font-family:var(--heading);font-size:1.5rem;font-weight:700;margin-bottom:1rem;color:var(--slate-900)}.legal-content p{font-size:.86rem;color:var(--slate-600);line-height:1.8;margin-bottom:1rem}.legal-content h3{font-family:var(--heading);font-size:1rem;font-weight:600;color:var(--slate-800);margin:1.5rem 0 .5rem}
     </style>
+    <!-- Google Analytics - Replace UA-XXXXX with your tracking ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -713,13 +743,16 @@
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-card reveal"><div class="stat-number" data-count="3">3</div><div class="stat-label" data-i18n="stat1">Owned Brands</div></div>
+                <div class="stat-card reveal"><div class="stat-number" data-count="4">4</div><div class="stat-label" data-i18n="stat1">Owned Brands</div></div>
                 <div class="stat-card reveal reveal-delay-1"><div class="stat-number" data-count="30">30+</div><div class="stat-label" data-i18n="stat2">Countries Exported</div></div>
                 <div class="stat-card reveal reveal-delay-2"><div class="stat-number" data-count="500">500+</div><div class="stat-label" data-i18n="stat3">Tonnes Annually</div></div>
                 <div class="stat-card reveal reveal-delay-3"><div class="stat-number">360°</div><div class="stat-label" data-i18n="stat4">Industry Coverage</div></div>
             </div>
         </div>
     </section>
+
+    <!-- PARTNERS -->
+    <section class="partners"><div class="container"><div class="partners-inner"><img src="https://francescoffee.com.tr/wp-content/uploads/2026/01/FrancesCoffee.png" alt="FrancesCoffee" class="partner-logo" loading="lazy" decoding="async"><img src="https://www.toptankahveler.com/wp-content/uploads/2024/09/TopTan_Coffee-1-kopya11.png" alt="ToptanKahveler" class="partner-logo" loading="lazy" decoding="async"><img src="https://www.toptankahveler.com/wp-content/uploads/2025/01/logo_band_colored@2x.png" alt="Partners" class="partner-logo" style="height:28px" loading="lazy" decoding="async"></div></div></section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
@@ -806,7 +839,7 @@
         <div class="container">
             <div class="brands-header">
                 <div class="section-label reveal" data-i18n="brand_label">Brand Portfolio</div>
-                <h2 class="section-title reveal reveal-delay-1" data-i18n-html="brand_title">Three Brands, <span class="blue-text">One Vision</span></h2>
+                <h2 class="section-title reveal reveal-delay-1" data-i18n-html="brand_title">Four Brands, <span class="blue-text">One Vision</span></h2>
                 <p class="section-subtitle reveal reveal-delay-2" data-i18n="brand_sub">Each brand serves a distinct market segment, together covering the full spectrum of the coffee industry.</p>
             </div>
             <div class="brands-showcase">
@@ -852,6 +885,20 @@
                         <a href="https://roasted.com" class="brand-link" target="_blank" rel="noopener" data-i18n="brand3_link">Visit Roasted.com <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
                     </div>
                 </div>
+                <div class="brand-card reveal reveal-delay-3">
+                    <a href="https://francescoffee.com.tr" target="_blank" rel="noopener" class="brand-card-header" style="text-decoration:none;display:block;cursor:pointer;background:linear-gradient(135deg,#D97706,#B45309)">
+                        <div class="brand-logo-area">
+                            <svg class="brand-logo-svg" viewBox="0 0 46 46"><rect width="46" height="46" rx="12" fill="rgba(255,255,255,.15)"/><rect x="1" y="1" width="44" height="44" rx="11" stroke="rgba(255,255,255,.2)" stroke-width="1" fill="none"/><text x="23" y="28" text-anchor="middle" fill="white" font-family="Sora,sans-serif" font-weight="800" font-size="16">2/3</text></svg>
+                            <div><div class="brand-name">Dos Tres</div><div class="brand-tagline">Capsule Coffee</div></div>
+                        </div>
+                        <span class="brand-type-badge" data-i18n="brand4_badge">Capsule Coffee</span>
+                    </a>
+                    <div class="brand-card-body">
+                        <p data-i18n="brand4_desc">Premium coffee capsule brand offering six distinctive blends — Uno, Forte, Oro, Decaf, Vivaz, and Aurora — compatible with Nespresso machines worldwide.</p>
+                        <div class="brand-highlights"><div class="brand-highlight"><div class="value">6</div><div class="label">Blends</div></div><div class="brand-highlight"><div class="value">Nespresso</div><div class="label">Compatible</div></div><div class="brand-highlight"><div class="value">Premium</div><div class="label">Quality</div></div></div>
+                        <a href="https://francescoffee.com.tr" class="brand-link" target="_blank" rel="noopener" data-i18n="brand4_link">Explore Dos Tres <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -865,12 +912,12 @@
                 <p class="section-subtitle reveal reveal-delay-2" data-i18n="gallery_sub">From premium retail blends to wholesale beans and capsule coffee — explore our product range.</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item wide reveal"><img src="images/toptan-wholesale.jpg" alt="ASAD Wholesale Coffee Beans" loading="lazy"><div class="gallery-overlay"><span data-i18n="gal_1">Wholesale Coffee Beans</span></div></div>
-                <div class="gallery-item reveal reveal-delay-1"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/150.jpg" alt="Frances Elite Red Espresso" loading="lazy"><div class="gallery-overlay"><span>Frances Elite Red</span></div></div>
-                <div class="gallery-item reveal reveal-delay-2"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/155.jpg" alt="Frances Elite Blue Espresso" loading="lazy"><div class="gallery-overlay"><span>Frances Elite Blue</span></div></div>
-                <div class="gallery-item reveal reveal-delay-1"><img src="https://www.toptankahveler.com/wp-content/uploads/2025/10/1-1-600x884.jpg" alt="ToptanKahveler Premium Beans" loading="lazy"><div class="gallery-overlay"><span>ToptanKahveler</span></div></div>
-                <div class="gallery-item reveal reveal-delay-2"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/152.jpg" alt="Frances Coffee Roasted Beans" loading="lazy"><div class="gallery-overlay"><span>Frances Roasted Beans</span></div></div>
-                <div class="gallery-item wide reveal"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/36.jpg" alt="Frances Coffee Product Range" loading="lazy"><div class="gallery-overlay"><span data-i18n="gal_2">Frances Coffee Collection</span></div></div>
+                <div class="gallery-item wide reveal"><img src="images/toptan-wholesale.jpg" alt="ASAD Wholesale Coffee Beans" loading="lazy" decoding="async"><div class="gallery-overlay"><span data-i18n="gal_1">Wholesale Coffee Beans</span></div></div>
+                <div class="gallery-item reveal reveal-delay-1"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/150.jpg" alt="Frances Elite Red Espresso" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Frances Elite Red</span></div></div>
+                <div class="gallery-item reveal reveal-delay-2"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/155.jpg" alt="Frances Elite Blue Espresso" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Frances Elite Blue</span></div></div>
+                <div class="gallery-item reveal reveal-delay-1"><img src="https://www.toptankahveler.com/wp-content/uploads/2025/10/1-1-600x884.jpg" alt="ToptanKahveler Premium Beans" loading="lazy" decoding="async"><div class="gallery-overlay"><span>ToptanKahveler</span></div></div>
+                <div class="gallery-item reveal reveal-delay-2"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/152.jpg" alt="Frances Coffee Roasted Beans" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Frances Roasted Beans</span></div></div>
+                <div class="gallery-item wide reveal"><img src="https://francescoffee.com.tr/wp-content/uploads/2025/12/36.jpg" alt="Frances Coffee Product Range" loading="lazy" decoding="async"><div class="gallery-overlay"><span data-i18n="gal_2">Frances Coffee Collection</span></div></div>
             </div>
         </div>
     </section>
@@ -944,6 +991,18 @@
         </div>
     </section>
 
+    <!-- TEAM -->
+    <section class="team">
+        <div class="container">
+            <div class="team-header"><div class="section-label reveal" data-i18n="team_label">Leadership</div><h2 class="section-title reveal reveal-delay-1" data-i18n-html="team_title">The People Behind <span class="blue-text">ASAD</span></h2></div>
+            <div class="team-grid">
+                <div class="team-card reveal"><div class="team-avatar">OA</div><h4>Omar Asad</h4><p data-i18n="team1_role">Founder & CEO</p></div>
+                <div class="team-card reveal reveal-delay-1"><div class="team-avatar">KA</div><h4>Khaled Asad</h4><p data-i18n="team2_role">Operations Director</p></div>
+                <div class="team-card reveal reveal-delay-2"><div class="team-avatar">FA</div><h4>Farid Asad</h4><p data-i18n="team3_role">Supply Chain Director</p></div>
+            </div>
+        </div>
+    </section>
+
     <!-- TESTIMONIALS -->
     <section class="trust">
         <div class="container">
@@ -952,6 +1011,32 @@
                 <div class="trust-card reveal"><div class="trust-stars">★★★★★</div><blockquote data-i18n="trust1_q">"ASAD's green bean quality and consistency have been exceptional. They've become our primary supplier for all European operations."</blockquote><div class="trust-author"><div class="trust-avatar">MK</div><div><div class="trust-name">Markus K.</div><div class="trust-role" data-i18n="trust1_role">Head of Sourcing, Vienna Roasters</div></div></div></div>
                 <div class="trust-card reveal reveal-delay-1"><div class="trust-stars">★★★★★</div><blockquote data-i18n="trust2_q">"The franchise consultancy team helped us launch three locations in six months. Their operational playbook is world-class."</blockquote><div class="trust-author"><div class="trust-avatar">AY</div><div><div class="trust-name">Ayşe Y.</div><div class="trust-role" data-i18n="trust2_role">Franchise Owner, Istanbul</div></div></div></div>
                 <div class="trust-card reveal reveal-delay-2"><div class="trust-stars">★★★★★</div><blockquote data-i18n="trust3_q">"ToptanKahveler's platform made our wholesale ordering seamless. The quality-to-price ratio is unmatched in the market."</blockquote><div class="trust-author"><div class="trust-avatar">RS</div><div><div class="trust-name">Rami S.</div><div class="trust-role" data-i18n="trust3_role">Operations Director, Gulf Beverages</div></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq-header"><div class="section-label reveal" data-i18n="faq_label">FAQ</div><h2 class="section-title reveal reveal-delay-1" data-i18n-html="faq_title">Frequently Asked <span class="blue-text">Questions</span></h2></div>
+            <div class="faq-grid">
+                <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span data-i18n="faq1_q">What is the minimum order quantity for wholesale?</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq1_a">Our minimum order quantity varies by product. For green beans, we typically start at 1 tonne. For roasted coffee, minimums start at 50kg. Contact us for specific product minimums and custom arrangements.</div></div></div>
+                <div class="faq-item reveal reveal-delay-1"><button class="faq-q" onclick="toggleFaq(this)"><span data-i18n="faq2_q">Which countries do you export to?</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq2_a">We export to over 30 countries across Europe, the Middle East, North Africa, and Asia. Our main export markets include Germany, Netherlands, Saudi Arabia, UAE, and the UK. We handle all export documentation and logistics.</div></div></div>
+                <div class="faq-item reveal reveal-delay-2"><button class="faq-q" onclick="toggleFaq(this)"><span data-i18n="faq3_q">How does the café franchise model work?</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq3_a">Our franchise model provides everything you need: location analysis, interior design, equipment sourcing, staff training, menu development, and ongoing operational support. We offer flexible franchise packages tailored to your market and budget.</div></div></div>
+                <div class="faq-item reveal reveal-delay-3"><button class="faq-q" onclick="toggleFaq(this)"><span data-i18n="faq4_q">Do you offer private label / white label services?</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq4_a">Yes, we offer comprehensive private label solutions including custom blending, roasting to your specifications, and packaging design. Whether you need 100kg or 100 tonnes, we can produce coffee under your brand with full quality assurance.</div></div></div>
+                <div class="faq-item reveal reveal-delay-4"><button class="faq-q" onclick="toggleFaq(this)"><span data-i18n="faq5_q">What certifications do your products hold?</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq5_a">Our operations comply with SCA standards, ISO, HACCP, and Fair Trade guidelines. We also offer Rainforest Alliance and organic certified options. Specific certification availability varies by origin and product line.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news">
+        <div class="container">
+            <div class="news-header"><div class="section-label reveal" data-i18n="news_label">Latest News</div><h2 class="section-title reveal reveal-delay-1" data-i18n-html="news_title">Industry <span class="blue-text">Insights</span></h2></div>
+            <div class="news-grid">
+                <div class="news-card reveal"><div class="news-img" style="background-image:url('https://www.toptankahveler.com/wp-content/uploads/2024/09/coffee-processing-roastery-roasting-machine-and-2023-11-27-05-02-38-utc-1-1600x1600.jpg')"></div><div class="news-body"><div class="news-date">March 2026</div><h4 data-i18n="news1_t">Expanding Our Roasting Capacity</h4><p data-i18n="news1_d">ASAD Gida Sanayi invests in new state-of-the-art roasting equipment, doubling our annual processing capacity to meet growing demand.</p></div></div>
+                <div class="news-card reveal reveal-delay-1"><div class="news-img" style="background-image:url('https://www.toptankahveler.com/wp-content/uploads/2024/09/bean-can-portion-control-coffee-bean-roaster-wareh-2024-09-16-21-03-35-utc-1600x1062.jpg')"></div><div class="news-body"><div class="news-date">February 2026</div><h4 data-i18n="news2_t">New Origin Partnerships in Ethiopia</h4><p data-i18n="news2_d">We've established direct sourcing partnerships with three new cooperatives in Yirgacheffe and Sidamo regions for premium specialty lots.</p></div></div>
+                <div class="news-card reveal reveal-delay-2"><div class="news-img" style="background-image:url('https://www.toptankahveler.com/wp-content/uploads/2024/09/espresso-coffee-capsules-or-pods-and-coffee-beans-2023-11-27-05-10-04-utc-1600x1600.jpg')"></div><div class="news-body"><div class="news-date">January 2026</div><h4 data-i18n="news3_t">Dos Tres Capsule Launch</h4><p data-i18n="news3_d">Our newest brand Dos Tres enters the capsule coffee market with six unique blends, bringing premium Turkish-roasted coffee to Nespresso lovers.</p></div></div>
             </div>
         </div>
     </section>
@@ -970,10 +1055,14 @@
                         <div class="contact-info-card reveal reveal-delay-4"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div><div><h4 data-i18n="ci2_t">Email</h4><p><a href="mailto:asadlimited.14@gmail.com" style="color:rgba(255,255,255,.6);text-decoration:none">asadlimited.14@gmail.com</a></p></div></div>
                         <div class="contact-info-card reveal reveal-delay-5"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg></div><div><h4 data-i18n="ci3_t">Websites</h4><p>asadlimited.com · toptankahveler.com · francescoffee.com.tr</p></div></div>
                     </div>
+                    <div class="reveal reveal-delay-5" style="margin-top:1.25rem;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.1)"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5!2d28.6727!3d41.0186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5e1a1a1a1a1%3A0x1234567890!2sSelahaddin+Eyyubi+Mahallesi%2C+Esenyurt%2FIstanbul!5e0!3m2!1sen!2str!4v1" width="100%" height="160" style="border:0;filter:brightness(.8) contrast(1.1)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
                 <div class="contact-form reveal reveal-delay-2">
                     <h3 data-i18n="form_title">Request a Quote</h3>
-                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <form id="contactForm" action="https://formsubmit.co/asadlimited.14@gmail.com" method="POST" onsubmit="handleSubmit(event)">
+                        <input type="hidden" name="_subject" value="New Inquiry from ASAD Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://www.asadlimited.com/#contact">
                         <div class="form-row"><div class="form-group"><label for="f_name" data-i18n="form_name">Full Name</label><input id="f_name" name="name" type="text" data-i18n-ph="form_name_ph" placeholder="Your name" required autocomplete="name"></div><div class="form-group"><label for="f_company" data-i18n="form_company">Company</label><input id="f_company" name="company" type="text" data-i18n-ph="form_company_ph" placeholder="Company name" autocomplete="organization"></div></div>
                         <div class="form-row"><div class="form-group"><label for="f_email" data-i18n="form_email">Email</label><input id="f_email" name="email" type="email" placeholder="your@email.com" required autocomplete="email"></div><div class="form-group"><label for="f_phone" data-i18n="form_phone">Phone</label><input id="f_phone" name="phone" type="tel" placeholder="+90 ..." autocomplete="tel"></div></div>
                         <div class="form-group"><label for="formSelect" data-i18n="form_interest">I'm Interested In</label><select id="formSelect" name="service"><option value="" data-i18n="form_select">Select a service...</option><option data-i18n="form_opt1">Green Bean Export</option><option data-i18n="form_opt2">Wholesale Distribution</option><option data-i18n="form_opt3">Roasting Raw Materials</option><option data-i18n="form_opt4">Café Franchising</option><option data-i18n="form_opt5">Industry Consultancy</option><option data-i18n="form_opt6">Roasted.com</option><option data-i18n="form_opt7">Partnership / Other</option></select></div>
@@ -992,6 +1081,9 @@
         <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto" data-i18n="cta_sub">Join hundreds of businesses that trust ASAD Gıda Sanayi as their end-to-end coffee industry partner.</p>
         <div class="cta-actions reveal reveal-delay-3"><a href="#contact" class="btn-primary" data-i18n="cta_btn1">Get Your Custom Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a href="#brands" class="btn-secondary" data-i18n="cta_btn2">Explore Our Brands</a></div>
     </div></div></section>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/904449131" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
     <!-- BACK TO TOP -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
@@ -1012,18 +1104,27 @@
                     <p style="font-size:.75rem;color:var(--slate-500);line-height:1.6;margin-bottom:.5rem"><svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:var(--slate-500);fill:none;stroke-width:2;vertical-align:middle;margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+904449131" style="color:var(--slate-500);text-decoration:none">444 9 131</a></p>
                     <p style="font-size:.75rem;color:var(--slate-500);line-height:1.6;margin-bottom:1.15rem"><svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:var(--slate-500);fill:none;stroke-width:2;vertical-align:middle;margin-right:4px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:asadlimited.14@gmail.com" style="color:var(--slate-500);text-decoration:none">asadlimited.14@gmail.com</a></p>
                     <div class="footer-socials">
-                        <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-                        <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M20 4l-6.768 6.768"/></svg></a>
+                        <a href="https://www.linkedin.com/company/asadlimited" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="https://www.instagram.com/francescoffeetr/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="https://www.instagram.com/toptankahveler/" target="_blank" rel="noopener" class="social-link" aria-label="ToptanKahveler Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
                     </div>
                 </div>
                 <div class="footer-col"><h4 data-i18n="nav_services">Services</h4><ul><li><a href="#services" data-i18n="svc1_t">Green Bean Export</a></li><li><a href="#services" data-i18n="ft_wholesale">Wholesale</a></li><li><a href="#services" data-i18n="ft_roasting">Roasting Materials</a></li><li><a href="#services" data-i18n="svc4_t">Café Franchising</a></li><li><a href="#services" data-i18n="ft_consult">Consultancy</a></li></ul></div>
                 <div class="footer-col"><h4 data-i18n="nav_brands">Our Brands</h4><ul><li><a href="https://toptankahveler.com" target="_blank" rel="noopener">ToptanKahveler</a></li><li><a href="https://francescoffee.com.tr" target="_blank" rel="noopener">FrancesCoffee</a></li><li><a href="https://roasted.com" target="_blank" rel="noopener">Roasted.com</a></li></ul></div>
                 <div class="footer-col"><h4 data-i18n="ft_company">Company</h4><ul><li><a href="#about" data-i18n="ft_aboutus">About Us</a></li><li><a href="#global" data-i18n="nav_global">Global Reach</a></li><li><a href="#process" data-i18n="nav_process">Supply Chain</a></li><li><a href="#contact" data-i18n="nav_contact">Contact</a></li></ul></div>
             </div>
-            <div class="footer-bottom"><p data-i18n="footer_copy">&copy; 2026 ASAD Gıda Sanayi Ltd. All rights reserved.</p><div class="footer-legal"><a href="#" data-i18n="ft_privacy">Privacy Policy</a><a href="#" data-i18n="ft_terms">Terms of Service</a><a href="#" data-i18n="ft_cookies">Cookie Policy</a></div></div>
+            <div class="footer-bottom"><p data-i18n="footer_copy">&copy; 2026 ASAD Gıda Sanayi Ltd. All rights reserved.</p><div class="footer-legal"><a href="#" onclick="openLegal('privacy');return false" data-i18n="ft_privacy">Privacy Policy</a><a href="#" onclick="openLegal('terms');return false" data-i18n="ft_terms">Terms of Service</a><a href="#" onclick="openLegal('privacy');return false" data-i18n="ft_cookies">Cookie Policy</a></div></div>
         </div>
     </footer>
+
+    <!-- PRIVACY MODAL -->
+    <div class="legal-modal" id="privacyModal"><div class="legal-content"><button class="legal-close" onclick="closeLegal('privacy')"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button><h2>Privacy Policy</h2><p>Last updated: March 2026</p><h3>Information We Collect</h3><p>We collect information you provide directly through our contact form, including your name, email, phone number, company name, and message content. This data is used solely to respond to your inquiries.</p><h3>How We Use Your Data</h3><p>Your personal data is used to process inquiries, send requested information about our products and services, and maintain business relationships. We do not sell or share your data with third parties.</p><h3>Cookies</h3><p>We use essential cookies for site functionality and analytics cookies to understand how visitors interact with our website. You can manage cookie preferences through our cookie banner.</p><h3>Contact</h3><p>For privacy-related questions, contact us at asadlimited.14@gmail.com or call 444 9 131.</p></div></div>
+
+    <!-- TERMS MODAL -->
+    <div class="legal-modal" id="termsModal"><div class="legal-content"><button class="legal-close" onclick="closeLegal('terms')"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button><h2>Terms of Service</h2><p>Last updated: March 2026</p><h3>Acceptance of Terms</h3><p>By accessing and using the ASAD Gida Sanayi website, you agree to be bound by these Terms of Service. If you do not agree, please refrain from using our website.</p><h3>Services</h3><p>ASAD Gida Sanayi provides information about our coffee industry services, including green bean export, wholesale distribution, cafe franchising, and consultancy. All service details are subject to separate commercial agreements.</p><h3>Intellectual Property</h3><p>All content on this website, including text, images, logos, and brand names (ASAD, ToptanKahveler, FrancesCoffee, Dos Tres, Roasted.com), are the property of ASAD Gida Sanayi Ltd. and are protected by applicable intellectual property laws.</p><h3>Limitation of Liability</h3><p>ASAD Gida Sanayi makes no warranties regarding the accuracy or completeness of website content. We are not liable for any damages arising from the use of this website.</p><h3>Contact</h3><p>For questions about these terms, contact us at asadlimited.14@gmail.com.</p></div></div>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner"><p data-i18n="cookie_text">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p><div style="display:flex;gap:.5rem"><button class="cookie-accept" onclick="acceptCookies()" data-i18n="cookie_accept">Accept All</button><button class="cookie-decline" onclick="declineCookies()" data-i18n="cookie_decline">Decline</button></div></div>
 
     <script>
         // Preloader
@@ -1057,22 +1158,15 @@
 
         // Form — with translated success messages & email validation
         function handleSubmit(e){
-            e.preventDefault();
             const form=e.target;
             const btn=form.querySelector('.form-submit');
             const email=form.querySelector('input[type="email"]');
-            if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){email.focus();return}
+            if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){e.preventDefault();email.focus();return}
             const lang=document.documentElement.lang||'en';
-            const msgs={en:'Sent! We\'ll be in touch soon.',tr:'Gönderildi! En kısa sürede size dönüş yapacağız.',ar:'تم الإرسال! سنتواصل معك قريباً.'};
-            const origText=btn.textContent;
+            const msgs={en:'Sending...',tr:'Gönderiliyor...',ar:'جاري الإرسال...'};
             btn.textContent=msgs[lang]||msgs.en;
             btn.style.background='linear-gradient(135deg,#22C55E,#16A34A)';
             btn.disabled=true;
-            setTimeout(()=>{btn.textContent=origText;btn.style.background='';btn.disabled=false;form.reset()},3500);
-            // Send form data via mailto fallback
-            const formData=new FormData(form);
-            const subject=encodeURIComponent('New Inquiry from '+formData.get('name'));
-            const body=encodeURIComponent('Name: '+(form.querySelector('input[type="text"]')?.value||'')+'\nEmail: '+(email?.value||'')+'\nPhone: '+(form.querySelector('input[type="tel"]')?.value||'')+'\nService: '+(form.querySelector('select')?.value||'')+'\nMessage: '+(form.querySelector('textarea')?.value||''));
         }
 
         // Parallax
@@ -1117,7 +1211,7 @@
             svc4_f1:"Proven business models",svc4_f2:"Location analysis & fit-out",svc4_f3:"Staff training programs",svc4_f4:"Ongoing operational support",
             svc5_f1:"Market entry strategy",svc5_f2:"Supply chain optimization",svc5_f3:"Brand development",svc5_f4:"Operational audits",
             svc6_f1:"B2B ordering platforms",svc6_f2:"Inventory management",svc6_f3:"Customer engagement apps",svc6_f4:"Data-driven insights",
-            brand_label:"Brand Portfolio",brand_title:'Three Brands, <span class="blue-text">One Vision</span>',brand_sub:"Each brand serves a distinct market segment, together covering the full spectrum of the coffee industry.",
+            brand_label:"Brand Portfolio",brand_title:'Four Brands, <span class="blue-text">One Vision</span>',brand_sub:"Each brand serves a distinct market segment, together covering the full spectrum of the coffee industry.",
             brand1_badge:"B2B Wholesale",brand1_desc:"Türkiye's premier wholesale coffee platform — connecting roasters, cafés, and distributors with quality beans at competitive bulk pricing.",brand1_link:"Visit ToptanKahveler",
             brand2_badge:"Premium Retail",brand2_desc:"Premium consumer coffee brand offering single-origin beans, signature blends, and an elevated coffee experience for discerning enthusiasts.",brand2_link:"Visit FrancesCoffee",
             brand3_badge:"Digital Platform",brand3_desc:"The digital backbone of modern coffee businesses — an e-commerce and ordering platform that streamlines wholesale operations, B2B transactions, and customer engagement.",brand3_link:"Visit Roasted.com",
@@ -1149,7 +1243,12 @@
             cta_label:"Ready to Start?",cta_title:'Your Coffee Journey<br><span class="blue-text">Starts Here</span>',cta_sub:"Join hundreds of businesses that trust ASAD Gıda Sanayi as their end-to-end coffee industry partner.",cta_btn1:"Get Your Custom Quote",cta_btn2:"Explore Our Brands",
             footer_desc:"Türkiye's comprehensive coffee industry group — from green bean origins to global cups. Powering brands, partnerships, and progress.",
             ft_wholesale:"Wholesale",ft_roasting:"Roasting Materials",ft_consult:"Consultancy",ft_company:"Company",ft_aboutus:"About Us",
-            footer_copy:"© 2026 ASAD Gıda Sanayi Ltd. All rights reserved.",ft_privacy:"Privacy Policy",ft_terms:"Terms of Service",ft_cookies:"Cookie Policy"
+            footer_copy:"© 2026 ASAD Gıda Sanayi Ltd. All rights reserved.",ft_privacy:"Privacy Policy",ft_terms:"Terms of Service",ft_cookies:"Cookie Policy",
+            cookie_text:"We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",cookie_accept:"Accept All",cookie_decline:"Decline",
+            brand4_badge:"Capsule Coffee",brand4_desc:"Premium coffee capsule brand offering six distinctive blends — Uno, Forte, Oro, Decaf, Vivaz, and Aurora — compatible with Nespresso machines worldwide.",brand4_link:"Explore Dos Tres",
+            team_label:"Leadership",team_title:'The People Behind <span class="blue-text">ASAD</span>',team1_role:"Founder & CEO",team2_role:"Operations Director",team3_role:"Supply Chain Director",
+            faq_label:"FAQ",faq_title:'Frequently Asked <span class="blue-text">Questions</span>',faq1_q:"What is the minimum order quantity for wholesale?",faq1_a:"Our minimum order quantity varies by product. For green beans, we typically start at 1 tonne. For roasted coffee, minimums start at 50kg. Contact us for specific product minimums and custom arrangements.",faq2_q:"Which countries do you export to?",faq2_a:"We export to over 30 countries across Europe, the Middle East, North Africa, and Asia. Our main export markets include Germany, Netherlands, Saudi Arabia, UAE, and the UK. We handle all export documentation and logistics.",faq3_q:"How does the café franchise model work?",faq3_a:"Our franchise model provides everything you need: location analysis, interior design, equipment sourcing, staff training, menu development, and ongoing operational support. We offer flexible franchise packages tailored to your market and budget.",faq4_q:"Do you offer private label / white label services?",faq4_a:"Yes, we offer comprehensive private label solutions including custom blending, roasting to your specifications, and packaging design. Whether you need 100kg or 100 tonnes, we can produce coffee under your brand with full quality assurance.",faq5_q:"What certifications do your products hold?",faq5_a:"Our operations comply with SCA standards, ISO, HACCP, and Fair Trade guidelines. We also offer Rainforest Alliance and organic certified options. Specific certification availability varies by origin and product line.",
+            news_label:"Latest News",news_title:'Industry <span class="blue-text">Insights</span>',news1_t:"Expanding Our Roasting Capacity",news1_d:"ASAD Gıda Sanayi invests in new state-of-the-art roasting equipment, doubling our annual processing capacity to meet growing demand.",news2_t:"New Origin Partnerships in Ethiopia",news2_d:"We've established direct sourcing partnerships with three new cooperatives in Yirgacheffe and Sidamo regions for premium specialty lots.",news3_t:"Dos Tres Capsule Launch",news3_d:"Our newest brand Dos Tres enters the capsule coffee market with six unique blends, bringing premium Turkish-roasted coffee to Nespresso lovers."
         },
         tr:{
             nav_about:"Hakkımızda",nav_services:"Hizmetler",nav_brands:"Markalarımız",nav_global:"Küresel Ağ",nav_process:"Tedarik Zinciri",nav_contact:"İletişim",nav_cta:"Teklif Alın",
@@ -1181,7 +1280,7 @@
             svc4_f1:"İspatlanmış ve kârlı iş modelleri",svc4_f2:"Lokasyon analizi ve mekan tasarımı",svc4_f3:"Kapsamlı personel eğitimleri",svc4_f4:"Açılış sonrası sürekli destek",
             svc5_f1:"Pazar giriş ve büyüme stratejileri",svc5_f2:"Tedarik zinciri iyileştirme",svc5_f3:"Marka konumlandırma ve geliştirme",svc5_f4:"Operasyonel verimlilik denetimleri",
             svc6_f1:"B2B sipariş ve yönetim platformları",svc6_f2:"Stok ve envanter takibi",svc6_f3:"Müşteri bağlılığı uygulamaları",svc6_f4:"Veriye dayalı iş zekası raporları",
-            brand_label:"Marka Portföyü",brand_title:'Üç Marka, <span class="blue-text">Ortak Vizyon</span>',brand_sub:"Her markamız farklı bir pazar segmentine hitap eder; birlikte kahve sektörünün tamamını kucaklıyoruz.",
+            brand_label:"Marka Portföyü",brand_title:'Dört Marka, <span class="blue-text">Ortak Vizyon</span>',brand_sub:"Her markamız farklı bir pazar segmentine hitap eder; birlikte kahve sektörünün tamamını kucaklıyoruz.",
             brand1_badge:"B2B Toptan",brand1_desc:"Türkiye'nin önde gelen toptan kahve platformu. Kavurmacıları, kafeleri ve distribütörleri rekabetçi fiyatlarla kaliteli çekirdeklerle buluşturuyoruz.",brand1_link:"ToptanKahveler'i Ziyaret Edin",
             brand2_badge:"Premium Perakende",brand2_desc:"Tek menşeli çekirdekler, özel harmanlar ve ayrıcalıklı bir kahve deneyimi sunan premium tüketici markamız. Seçici damaklara hitap ediyor.",brand2_link:"FrancesCoffee'yi Ziyaret Edin",
             brand3_badge:"Dijital Platform",brand3_desc:"Modern kahve işletmelerinin dijital altyapısı. Toptan sipariş, B2B işlemler ve müşteri ilişkilerini tek platformda yöneten e-ticaret çözümleri.",brand3_link:"Roasted.com'u Ziyaret Edin",
@@ -1213,7 +1312,12 @@
             cta_label:"Hazır mısınız?",cta_title:'Kahve Yolculuğunuz<br><span class="blue-text">Burada Başlıyor</span>',cta_sub:"Kahve sektöründe uçtan uca güvenilir bir çözüm ortağı arayan yüzlerce işletme gibi siz de ASAD Gıda Sanayi ailesine katılın.",cta_btn1:"Size Özel Teklif Alın",cta_btn2:"Markalarımızı Keşfedin",
             footer_desc:"Türkiye'nin lider kahve sanayi grubu. Yeşil çekirdekten dünyanın dört bir yanındaki fincanlara — markalar, ortaklıklar ve sürdürülebilir büyüme inşa ediyoruz.",
             ft_wholesale:"Toptan Satış",ft_roasting:"Kavurma Malzemeleri",ft_consult:"Danışmanlık",ft_company:"Kurumsal",ft_aboutus:"Hakkımızda",
-            footer_copy:"© 2026 ASAD Gıda Sanayi Ltd. Tüm hakları saklıdır.",ft_privacy:"Gizlilik Politikası",ft_terms:"Kullanım Koşulları",ft_cookies:"Çerez Politikası"
+            footer_copy:"© 2026 ASAD Gıda Sanayi Ltd. Tüm hakları saklıdır.",ft_privacy:"Gizlilik Politikası",ft_terms:"Kullanım Koşulları",ft_cookies:"Çerez Politikası",
+            cookie_text:"Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Bu siteyi ziyaret etmeye devam ederek çerez kullanımımızı kabul etmiş olursunuz.",cookie_accept:"Tümünü Kabul Et",cookie_decline:"Reddet",
+            brand4_badge:"Kapsül Kahve",brand4_desc:"Altı farklı harman sunan premium kapsül kahve markası — Uno, Forte, Oro, Decaf, Vivaz ve Aurora — dünya genelinde Nespresso makineleriyle uyumlu.",brand4_link:"Dos Tres'i Keşfedin",
+            team_label:"Yönetim",team_title:'<span class="blue-text">ASAD</span>\'ın Arkasındaki İsimler',team1_role:"Kurucu ve CEO",team2_role:"Operasyon Direktörü",team3_role:"Tedarik Zinciri Direktörü",
+            faq_label:"SSS",faq_title:'Sıkça Sorulan <span class="blue-text">Sorular</span>',faq1_q:"Toptan satışta minimum sipariş miktarı nedir?",faq1_a:"Minimum sipariş miktarı ürüne göre değişir. Yeşil çekirdek için genellikle 1 tondan başlar. Kavrulmuş kahve için minimum 50 kg'dır. Özel düzenlemeler ve detaylı bilgi için bizimle iletişime geçin.",faq2_q:"Hangi ülkelere ihracat yapıyorsunuz?",faq2_a:"Avrupa, Orta Doğu, Kuzey Afrika ve Asya genelinde 30'dan fazla ülkeye ihracat yapıyoruz. Başlıca pazarlarımız Almanya, Hollanda, Suudi Arabistan, BAE ve İngiltere'dir. Tüm ihracat evrakları ve lojistik süreçlerini biz yönetiyoruz.",faq3_q:"Kafe franchise modeli nasıl çalışıyor?",faq3_a:"Franchise modelimiz ihtiyacınız olan her şeyi sağlar: lokasyon analizi, iç mekan tasarımı, ekipman tedariği, personel eğitimi, menü geliştirme ve sürekli operasyonel destek. Pazarınıza ve bütçenize uygun esnek franchise paketleri sunuyoruz.",faq4_q:"Özel etiket / beyaz etiket hizmeti sunuyor musunuz?",faq4_a:"Evet, özel harmanlama, size özel kavurma profilleri ve ambalaj tasarımı dahil kapsamlı özel etiket çözümleri sunuyoruz. 100 kg'dan 100 tona kadar, tam kalite güvencesiyle kendi markanız altında kahve üretebiliriz.",faq5_q:"Ürünleriniz hangi sertifikalara sahip?",faq5_a:"Operasyonlarımız SCA standartları, ISO, HACCP ve Adil Ticaret yönergelerine uygundur. Ayrıca Rainforest Alliance ve organik sertifikalı seçenekler de sunuyoruz. Sertifika mevcudiyeti menşei ve ürün hattına göre değişir.",
+            news_label:"Haberler",news_title:'Sektörel <span class="blue-text">Gelişmeler</span>',news1_t:"Kavurma Kapasitemizi Genişletiyoruz",news1_d:"ASAD Gıda Sanayi, artan talebi karşılamak için son teknoloji kavurma ekipmanlarına yatırım yaparak yıllık işleme kapasitesini ikiye katladı.",news2_t:"Etiyopya'da Yeni Menşei Ortaklıklar",news2_d:"Yirgacheffe ve Sidamo bölgelerinde üç yeni kooperatifle doğrudan tedarik ortaklıkları kurduk.",news3_t:"Dos Tres Kapsül Lansmanı",news3_d:"En yeni markamız Dos Tres, altı eşsiz harmanıyla kapsül kahve pazarına giriş yaparak Nespresso severlere premium Türk kavurması kahve sunuyor."
         },
         ar:{
             nav_about:"من نحن",nav_services:"خدماتنا",nav_brands:"علاماتنا",nav_global:"حضورنا العالمي",nav_process:"سلسلة التوريد",nav_contact:"تواصل معنا",nav_cta:"اطلب عرض سعر",
@@ -1245,7 +1349,7 @@
             svc4_f1:"نماذج أعمال ناجحة ومُثبتة",svc4_f2:"دراسة الموقع والتصميم الداخلي",svc4_f3:"برامج تدريب شاملة للفريق",svc4_f4:"دعم تشغيلي مستمر بعد الافتتاح",
             svc5_f1:"استراتيجيات دخول السوق والتوسع",svc5_f2:"تحسين كفاءة سلسلة التوريد",svc5_f3:"بناء وتطوير العلامة التجارية",svc5_f4:"تدقيق شامل للعمليات التشغيلية",
             svc6_f1:"منصات طلب إلكترونية للشركات",svc6_f2:"أنظمة متقدمة لإدارة المخزون",svc6_f3:"تطبيقات لتعزيز ولاء العملاء",svc6_f4:"تحليلات ورؤى مبنية على البيانات",
-            brand_label:"محفظة العلامات التجارية",brand_title:'ثلاث علامات، <span class="blue-text">رؤية موحّدة</span>',brand_sub:"كل علامة تجارية تخدم شريحة سوقية متميزة، وتتكامل معاً لتغطية الطيف الكامل لصناعة القهوة.",
+            brand_label:"محفظة العلامات التجارية",brand_title:'أربع علامات، <span class="blue-text">رؤية موحّدة</span>',brand_sub:"كل علامة تجارية تخدم شريحة سوقية متميزة، وتتكامل معاً لتغطية الطيف الكامل لصناعة القهوة.",
             brand1_badge:"تجارة جملة B2B",brand1_desc:"المنصة الرائدة لتجارة القهوة بالجملة في تركيا — تجمع بين المحامص والمقاهي والموزعين وتوفر لهم حبوباً عالية الجودة بأسعار جملة تنافسية.",brand1_link:"زيارة ToptanKahveler",
             brand2_badge:"تجزئة فاخرة",brand2_desc:"علامة قهوة استهلاكية راقية تقدم حبوباً أحادية المنشأ وخلطات مميزة وتجربة قهوة استثنائية تُرضي أرفع الأذواق.",brand2_link:"زيارة FrancesCoffee",
             brand3_badge:"منصة رقمية",brand3_desc:"البنية الرقمية لأعمال القهوة العصرية — منصة تجارة إلكترونية تُبسّط عمليات البيع بالجملة ومعاملات B2B والتواصل مع العملاء.",brand3_link:"زيارة Roasted.com",
@@ -1277,7 +1381,12 @@
             cta_label:"مستعد للانطلاق؟",cta_title:'رحلتك مع القهوة<br><span class="blue-text">تبدأ من هنا</span>',cta_sub:"انضم إلى مئات الشركات التي اختارت أسد للصناعات الغذائية شريكاً موثوقاً ومتكاملاً في عالم القهوة.",cta_btn1:"احصل على عرضك المخصص",cta_btn2:"تعرّف على علاماتنا",
             footer_desc:"مجموعة القهوة الرائدة في تركيا — من حبوب البن الخضراء إلى فناجين العالم. نبني علامات تجارية قوية، ونُرسي شراكات متينة، ونقود مسيرة التقدم.",
             ft_wholesale:"تجارة الجملة",ft_roasting:"خامات التحميص",ft_consult:"الاستشارات",ft_company:"الشركة",ft_aboutus:"من نحن",
-            footer_copy:"© 2026 أسد للصناعات الغذائية المحدودة. جميع الحقوق محفوظة.",ft_privacy:"سياسة الخصوصية",ft_terms:"الشروط والأحكام",ft_cookies:"سياسة ملفات تعريف الارتباط"
+            footer_copy:"© 2026 أسد للصناعات الغذائية المحدودة. جميع الحقوق محفوظة.",ft_privacy:"سياسة الخصوصية",ft_terms:"الشروط والأحكام",ft_cookies:"سياسة ملفات تعريف الارتباط",
+            cookie_text:"نستخدم ملفات تعريف الارتباط لتحسين تجربتك. بمتابعة زيارة هذا الموقع فإنك توافق على استخدامنا لملفات تعريف الارتباط.",cookie_accept:"قبول الكل",cookie_decline:"رفض",
+            brand4_badge:"قهوة كبسولات",brand4_desc:"علامة كبسولات قهوة فاخرة تقدم ستة خلطات مميزة — Uno وForte وOro وDecaf وVivaz وAurora — متوافقة مع أجهزة نسبريسو حول العالم.",brand4_link:"استكشف Dos Tres",
+            team_label:"القيادة",team_title:'الفريق وراء <span class="blue-text">أسد</span>',team1_role:"المؤسس والرئيس التنفيذي",team2_role:"مدير العمليات",team3_role:"مدير سلسلة التوريد",
+            faq_label:"الأسئلة الشائعة",faq_title:'أسئلة <span class="blue-text">متكررة</span>',faq1_q:"ما هو الحد الأدنى لكمية الطلب بالجملة؟",faq1_a:"يختلف الحد الأدنى لكمية الطلب حسب المنتج. بالنسبة للحبوب الخضراء نبدأ عادة من طن واحد، وللقهوة المحمصة يبدأ الحد الأدنى من 50 كجم. تواصل معنا للحصول على تفاصيل محددة وترتيبات خاصة.",faq2_q:"ما هي الدول التي تصدرون إليها؟",faq2_a:"نصدّر إلى أكثر من 30 دولة في أوروبا والشرق الأوسط وشمال أفريقيا وآسيا. أسواقنا الرئيسية تشمل ألمانيا وهولندا والسعودية والإمارات والمملكة المتحدة. نتولى جميع وثائق التصدير والخدمات اللوجستية.",faq3_q:"كيف يعمل نموذج امتياز المقاهي؟",faq3_a:"يوفر نموذج الامتياز لدينا كل ما تحتاجه: تحليل الموقع والتصميم الداخلي وتوريد المعدات وتدريب الموظفين وتطوير القائمة والدعم التشغيلي المستمر. نقدم باقات امتياز مرنة مصممة لسوقك وميزانيتك.",faq4_q:"هل تقدمون خدمات العلامة الخاصة / البيضاء؟",faq4_a:"نعم، نقدم حلول علامة خاصة شاملة تتضمن المزج المخصص والتحميص وفق مواصفاتك وتصميم التغليف. سواء كنت بحاجة إلى 100 كجم أو 100 طن، يمكننا إنتاج القهوة تحت علامتك التجارية مع ضمان جودة كامل.",faq5_q:"ما هي الشهادات التي تحملها منتجاتكم؟",faq5_a:"تتوافق عملياتنا مع معايير SCA وISO وHACCP وإرشادات التجارة العادلة. كما نقدم خيارات معتمدة من تحالف الغابات المطيرة وعضوية. يختلف توفر الشهادات حسب المنشأ وخط المنتجات.",
+            news_label:"آخر الأخبار",news_title:'رؤى <span class="blue-text">القطاع</span>',news1_t:"توسيع طاقتنا الإنتاجية في التحميص",news1_d:"تستثمر أسد للصناعات الغذائية في معدات تحميص متطورة جديدة لمضاعفة طاقتها الإنتاجية السنوية تلبيةً للطلب المتزايد.",news2_t:"شراكات توريد جديدة في إثيوبيا",news2_d:"أقمنا شراكات توريد مباشرة مع ثلاث تعاونيات جديدة في مناطق يرجاشيف وسيدامو للحصول على دفعات متخصصة فاخرة.",news3_t:"إطلاق كبسولات Dos Tres",news3_d:"تدخل أحدث علاماتنا التجارية Dos Tres سوق كبسولات القهوة بستة خلطات فريدة تقدم قهوة محمصة تركية فاخرة لعشاق نسبريسو."
         }};
 
         // ── LANGUAGE SWITCHER ──
@@ -1332,6 +1441,22 @@
         // Load saved language
         const savedLang=localStorage.getItem('asad-lang');
         if(savedLang&&savedLang!=='en')switchLanguage(savedLang);
+
+        // FAQ Toggle
+        function toggleFaq(btn){const item=btn.parentElement;const answer=item.querySelector('.faq-a');const inner=item.querySelector('.faq-a-inner');if(item.classList.contains('open')){answer.style.maxHeight='0';item.classList.remove('open')}else{document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight='0'});answer.style.maxHeight=inner.scrollHeight+'px';item.classList.add('open')}}
+
+        // Legal Modals
+        function openLegal(type){document.getElementById(type+'Modal').classList.add('open');document.body.style.overflow='hidden'}
+        function closeLegal(type){document.getElementById(type+'Modal').classList.remove('open');document.body.style.overflow=''}
+        document.querySelectorAll('.legal-modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('open');document.body.style.overflow=''}}));
+
+        // Cookie Consent
+        function acceptCookies(){document.getElementById('cookieBanner').classList.remove('visible');localStorage.setItem('asad-cookies','accepted')}
+        function declineCookies(){document.getElementById('cookieBanner').classList.remove('visible');localStorage.setItem('asad-cookies','declined')}
+        if(!localStorage.getItem('asad-cookies')){setTimeout(()=>document.getElementById('cookieBanner').classList.add('visible'),2000)}
+
+        // PWA Service Worker Registration
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{})}
     </script>
 </body>
 </html>

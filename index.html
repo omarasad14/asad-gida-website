@@ -125,7 +125,7 @@
         .nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
         /* ── HERO ── */
-        .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 5rem;background:linear-gradient(135deg,rgba(15,23,42,.84),rgba(30,64,175,.72)),url('https://images.unsplash.com/photo-1611070650390-6ce3ac7e5593?w=1920&q=80') center/cover no-repeat}
+        .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 5rem;background:linear-gradient(135deg,rgba(15,23,42,.92),rgba(30,64,175,.8)),url('https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=1920&q=80') center/cover no-repeat}
         .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--white),transparent);z-index:1}
         .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");z-index:1;pointer-events:none}
 
@@ -837,6 +837,44 @@
         </div>
     </section>
 
+    <!-- CAPSULE PRODUCTION -->
+    <section class="capsule" id="capsule">
+        <div class="container">
+            <div class="capsule-header">
+                <div class="section-label reveal" data-i18n="cap_label">Private Label Manufacturing</div>
+                <h2 class="section-title reveal reveal-delay-1" data-i18n-html="cap_title">Capsule Coffee <span class="blue-text">Production</span></h2>
+                <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto" data-i18n="cap_sub">We manufacture premium coffee capsules for private label clients worldwide — Nespresso and CIBO compatible, competitively priced, and export-ready.</p>
+            </div>
+            <div class="capsule-grid">
+                <div class="capsule-visual reveal">
+                    <div class="capsule-img"></div>
+                    <div class="capsule-badge">
+                        <div class="capsule-badge-icon">2/3</div>
+                        <div><div class="capsule-badge-text" data-i18n="cap_badge">Dos Tres — Our Capsule Brand</div><div class="capsule-badge-sub" data-i18n="cap_badge_sub">6 blends | Nespresso & CIBO compatible</div></div>
+                    </div>
+                </div>
+                <div class="capsule-content">
+                    <div class="section-label reveal" data-i18n="cap_mfg_label">Manufacturing Capacity</div>
+                    <h3 class="reveal reveal-delay-1" data-i18n="cap_h1">Your Brand, Our Expertise</h3>
+                    <p class="reveal reveal-delay-2" data-i18n="cap_p1">ASAD Gıda Sanayi operates a high-speed capsule filling line capable of producing 2 full shipping containers every 3 days. Our facility supports both Nespresso-compatible and CIBO-compatible capsule formats, making us a versatile partner for private label coffee brands worldwide.</p>
+                    <p class="reveal reveal-delay-3" data-i18n="cap_p2">From sourcing and roasting to filling, sealing, and packaging — we handle the entire capsule production process in-house. Our competitive pricing structure and global export capabilities make us an ideal manufacturing partner for brands looking to enter or scale in the capsule coffee market.</p>
+                    <div class="capsule-stats reveal reveal-delay-3">
+                        <div class="capsule-stat"><div class="cs-val">300K+</div><div class="cs-lbl" data-i18n="cs1">Capsules / Day</div></div>
+                        <div class="capsule-stat"><div class="cs-val">7.8M</div><div class="cs-lbl" data-i18n="cs2">Capsules / Month</div></div>
+                        <div class="capsule-stat"><div class="cs-val">780K</div><div class="cs-lbl" data-i18n="cs3">Boxes of 10 / Month</div></div>
+                        <div class="capsule-stat"><div class="cs-val">93M+</div><div class="cs-lbl" data-i18n="cs4">Capsules / Year</div></div>
+                    </div>
+                    <div class="capsule-compat reveal reveal-delay-4">
+                        <span class="capsule-tag">Nespresso Compatible</span>
+                        <span class="capsule-tag">CIBO Compatible</span>
+                        <span class="capsule-tag">Private Label</span>
+                        <span class="capsule-tag">Global Export</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- BRANDS -->
     <section class="brands" id="brands">
         <div class="container">
@@ -921,44 +959,6 @@
                 <div class="gallery-item reveal reveal-delay-1"><img src="images/toptan-product-1.jpg" alt="ToptanKahveler Premium Beans" loading="lazy"><div class="gallery-overlay"><span>ToptanKahveler</span></div></div>
                 <div class="gallery-item reveal reveal-delay-2"><img src="images/frances-product-3.jpg" alt="Frances Coffee Roasted Beans" loading="lazy"><div class="gallery-overlay"><span>Frances Roasted Beans</span></div></div>
                 <div class="gallery-item wide reveal"><img src="images/frances-product-4.jpg" alt="Frances Coffee Product Range" loading="lazy"><div class="gallery-overlay"><span data-i18n="gal_2">Frances Coffee Collection</span></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CAPSULE PRODUCTION -->
-    <section class="capsule" id="capsule">
-        <div class="container">
-            <div class="capsule-header">
-                <div class="section-label reveal" data-i18n="cap_label">Private Label Manufacturing</div>
-                <h2 class="section-title reveal reveal-delay-1" data-i18n-html="cap_title">Capsule Coffee <span class="blue-text">Production</span></h2>
-                <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto" data-i18n="cap_sub">We manufacture premium coffee capsules for private label clients worldwide — Nespresso and CIBO compatible, competitively priced, and export-ready.</p>
-            </div>
-            <div class="capsule-grid">
-                <div class="capsule-visual reveal">
-                    <div class="capsule-img"></div>
-                    <div class="capsule-badge">
-                        <div class="capsule-badge-icon">2/3</div>
-                        <div><div class="capsule-badge-text" data-i18n="cap_badge">Dos Tres — Our Capsule Brand</div><div class="capsule-badge-sub" data-i18n="cap_badge_sub">6 blends | Nespresso & CIBO compatible</div></div>
-                    </div>
-                </div>
-                <div class="capsule-content">
-                    <div class="section-label reveal" data-i18n="cap_mfg_label">Manufacturing Capacity</div>
-                    <h3 class="reveal reveal-delay-1" data-i18n="cap_h1">Your Brand, Our Expertise</h3>
-                    <p class="reveal reveal-delay-2" data-i18n="cap_p1">ASAD Gıda Sanayi operates a high-speed capsule filling line capable of producing 2 full shipping containers every 3 days. Our facility supports both Nespresso-compatible and CIBO-compatible capsule formats, making us a versatile partner for private label coffee brands worldwide.</p>
-                    <p class="reveal reveal-delay-3" data-i18n="cap_p2">From sourcing and roasting to filling, sealing, and packaging — we handle the entire capsule production process in-house. Our competitive pricing structure and global export capabilities make us an ideal manufacturing partner for brands looking to enter or scale in the capsule coffee market.</p>
-                    <div class="capsule-stats reveal reveal-delay-3">
-                        <div class="capsule-stat"><div class="cs-val">300K+</div><div class="cs-lbl" data-i18n="cs1">Capsules / Day</div></div>
-                        <div class="capsule-stat"><div class="cs-val">7.8M</div><div class="cs-lbl" data-i18n="cs2">Capsules / Month</div></div>
-                        <div class="capsule-stat"><div class="cs-val">780K</div><div class="cs-lbl" data-i18n="cs3">Boxes of 10 / Month</div></div>
-                        <div class="capsule-stat"><div class="cs-val">93M+</div><div class="cs-lbl" data-i18n="cs4">Capsules / Year</div></div>
-                    </div>
-                    <div class="capsule-compat reveal reveal-delay-4">
-                        <span class="capsule-tag">Nespresso Compatible</span>
-                        <span class="capsule-tag">CIBO Compatible</span>
-                        <span class="capsule-tag">Private Label</span>
-                        <span class="capsule-tag">Global Export</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

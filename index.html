@@ -120,7 +120,7 @@
         .nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
         /* ── HERO ── */
-        .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 5rem;background:linear-gradient(135deg,rgba(15,23,42,.84),rgba(30,64,175,.72)),url('images/toptan-hero.jpg') center/cover no-repeat}
+        .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 5rem;background:linear-gradient(135deg,rgba(15,23,42,.84),rgba(30,64,175,.72)),url('https://images.unsplash.com/photo-1524350876685-274059332603?w=1920&q=80') center/cover no-repeat}
         .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--white),transparent);z-index:1}
 
         /* Animated mesh blobs */
@@ -241,7 +241,8 @@
         .brand-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl)}
         .brand-card:hover::before{opacity:1}
 
-        .brand-card-header{padding:2rem 1.6rem 1.5rem;position:relative}
+        .brand-card-header{padding:2rem 1.6rem 1.5rem;position:relative;transition:filter .3s}
+        a.brand-card-header:hover{filter:brightness(1.1)}
         .brand-card:nth-child(1) .brand-card-header{background:linear-gradient(135deg,var(--blue-600),var(--blue-700))}
         .brand-card:nth-child(2) .brand-card-header{background:linear-gradient(135deg,var(--blue-800),var(--indigo-500))}
         .brand-card:nth-child(3) .brand-card-header{background:linear-gradient(135deg,var(--sky-500),var(--blue-500))}
@@ -810,13 +811,13 @@
             </div>
             <div class="brands-showcase">
                 <div class="brand-card reveal">
-                    <div class="brand-card-header">
+                    <a href="https://toptankahveler.com" target="_blank" rel="noopener" class="brand-card-header" style="text-decoration:none;display:block;cursor:pointer">
                         <div class="brand-logo-area">
                             <svg class="brand-logo-svg" viewBox="0 0 46 46"><rect width="46" height="46" rx="12" fill="rgba(255,255,255,.15)"/><rect x="1" y="1" width="44" height="44" rx="11" stroke="rgba(255,255,255,.2)" stroke-width="1" fill="none"/><text x="23" y="30" text-anchor="middle" fill="white" font-family="Sora,sans-serif" font-weight="700" font-size="20">T</text><path d="M10 10 L36 10" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/></svg>
                             <div><div class="brand-name">ToptanKahveler</div><div class="brand-tagline">toptankahveler.com</div></div>
                         </div>
                         <span class="brand-type-badge" data-i18n="brand1_badge">B2B Wholesale</span>
-                    </div>
+                    </a>
                     <div class="brand-card-body">
                         <p data-i18n="brand1_desc">Türkiye's premier wholesale coffee platform — connecting roasters, cafés, and distributors with quality beans at competitive bulk pricing.</p>
                         <div class="brand-highlights"><div class="brand-highlight"><div class="value">B2B</div><div class="label">Focus</div></div><div class="brand-highlight"><div class="value">50+</div><div class="label">SKUs</div></div><div class="brand-highlight"><div class="value">EU</div><div class="label">Export</div></div></div>
@@ -824,13 +825,13 @@
                     </div>
                 </div>
                 <div class="brand-card reveal reveal-delay-1">
-                    <div class="brand-card-header">
+                    <a href="https://francescoffee.com.tr" target="_blank" rel="noopener" class="brand-card-header" style="text-decoration:none;display:block;cursor:pointer">
                         <div class="brand-logo-area">
                             <svg class="brand-logo-svg" viewBox="0 0 46 46"><rect width="46" height="46" rx="12" fill="rgba(255,255,255,.15)"/><rect x="1" y="1" width="44" height="44" rx="11" stroke="rgba(255,255,255,.2)" stroke-width="1" fill="none"/><text x="23" y="30" text-anchor="middle" fill="white" font-family="Sora,sans-serif" font-weight="700" font-size="20" font-style="italic">F</text><circle cx="34" cy="12" r="3" fill="rgba(255,255,255,.2)"/></svg>
                             <div><div class="brand-name">FrancesCoffee</div><div class="brand-tagline">francescoffee.com.tr</div></div>
                         </div>
                         <span class="brand-type-badge" data-i18n="brand2_badge">Premium Retail</span>
-                    </div>
+                    </a>
                     <div class="brand-card-body">
                         <p data-i18n="brand2_desc">Premium consumer coffee brand offering single-origin beans, signature blends, and an elevated coffee experience for discerning enthusiasts.</p>
                         <div class="brand-highlights"><div class="brand-highlight"><div class="value">D2C</div><div class="label">Focus</div></div><div class="brand-highlight"><div class="value">20+</div><div class="label">Origins</div></div><div class="brand-highlight"><div class="value">5★</div><div class="label">Rated</div></div></div>
@@ -838,13 +839,13 @@
                     </div>
                 </div>
                 <div class="brand-card reveal reveal-delay-2">
-                    <div class="brand-card-header">
+                    <a href="https://roasted.com" target="_blank" rel="noopener" class="brand-card-header" style="text-decoration:none;display:block;cursor:pointer">
                         <div class="brand-logo-area">
                             <svg class="brand-logo-svg" viewBox="0 0 46 46"><rect width="46" height="46" rx="12" fill="rgba(255,255,255,.15)"/><rect x="1" y="1" width="44" height="44" rx="11" stroke="rgba(255,255,255,.2)" stroke-width="1" fill="none"/><text x="23" y="30" text-anchor="middle" fill="white" font-family="Sora,sans-serif" font-weight="700" font-size="16">R.</text><path d="M8 38 L38 38" stroke="rgba(255,255,255,.15)" stroke-width="1"/></svg>
                             <div><div class="brand-name">Roasted.com</div><div class="brand-tagline">roasted.com</div></div>
                         </div>
-                        <span class="brand-type-badge" data-i18n="brand3_badge">Tech Platform</span>
-                    </div>
+                        <span class="brand-type-badge" data-i18n="brand3_badge">Digital Platform</span>
+                    </a>
                     <div class="brand-card-body">
                         <p data-i18n="brand3_desc">The digital backbone of modern coffee businesses — a platform and mobile app that streamlines ordering, operations, and customer engagement.</p>
                         <div class="brand-highlights"><div class="brand-highlight"><div class="value">SaaS</div><div class="label">Model</div></div><div class="brand-highlight"><div class="value">Web</div><div class="label">+ Mobile</div></div><div class="brand-highlight"><div class="value">AI</div><div class="label">Powered</div></div></div>

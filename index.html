@@ -287,6 +287,9 @@
         .gallery-overlay span{font-family:var(--heading);font-size:.75rem;font-weight:600;color:white}
         @media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-item.wide{grid-column:span 1}}
 
+        /* ── CAPSULE PRODUCTION ── */
+        .capsule{padding:6rem 0;background:var(--white)}.capsule-header{text-align:center;margin-bottom:3rem}.capsule-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}.capsule-visual{position:relative}.capsule-img{width:100%;border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,rgba(217,119,6,.15),rgba(180,83,9,.08)),url('https://www.toptankahveler.com/wp-content/uploads/2024/09/espresso-coffee-capsules-or-pods-and-coffee-beans-2023-11-27-05-10-04-utc-1600x1600.jpg') center/cover;box-shadow:var(--shadow-xl)}.capsule-badge{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:14px;padding:1rem 1.25rem;display:flex;align-items:center;gap:.75rem;box-shadow:var(--shadow-lg)}.capsule-badge-icon{width:46px;height:46px;background:linear-gradient(135deg,#D97706,#B45309);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--heading);font-size:1.1rem;font-weight:800;color:white}.capsule-badge-text{font-family:var(--heading);font-size:.82rem;font-weight:600;color:var(--slate-800)}.capsule-badge-sub{font-size:.68rem;color:var(--slate-400)}.capsule-content h3{font-family:var(--heading);font-size:1.1rem;font-weight:600;color:var(--slate-800);margin-bottom:.5rem}.capsule-content p{font-size:.88rem;color:var(--slate-600);line-height:1.8;margin-bottom:1rem}.capsule-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem;margin-top:1.5rem}.capsule-stat{padding:1rem;background:var(--slate-50);border:1px solid var(--slate-100);border-radius:12px;text-align:center;transition:all .3s}.capsule-stat:hover{border-color:var(--blue-300);transform:translateY(-2px)}.capsule-stat .cs-val{font-family:var(--heading);font-size:1.15rem;font-weight:700;color:var(--blue-600)}.capsule-stat .cs-lbl{font-size:.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:.05em}.capsule-compat{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap}.capsule-tag{padding:.35rem .75rem;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:50px;font-family:var(--mono);font-size:.68rem;font-weight:600;color:var(--blue-600)}@media(max-width:768px){.capsule-grid{grid-template-columns:1fr}}
+
         /* ── BEAN DIVIDER ── */
         .bean-divider{height:280px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(15,29,61,.78),rgba(37,99,235,.5)),url('https://francescoffee.com.tr/wp-content/uploads/2025/11/espresso-roast-2917.jpg.webp') center/cover no-repeat;background-attachment:fixed;display:flex;align-items:center}
         .bean-divider-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;color:white;text-align:center}
@@ -922,6 +925,44 @@
         </div>
     </section>
 
+    <!-- CAPSULE PRODUCTION -->
+    <section class="capsule" id="capsule">
+        <div class="container">
+            <div class="capsule-header">
+                <div class="section-label reveal" data-i18n="cap_label">Private Label Manufacturing</div>
+                <h2 class="section-title reveal reveal-delay-1" data-i18n-html="cap_title">Capsule Coffee <span class="blue-text">Production</span></h2>
+                <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto" data-i18n="cap_sub">We manufacture premium coffee capsules for private label clients worldwide — Nespresso and CIBO compatible, competitively priced, and export-ready.</p>
+            </div>
+            <div class="capsule-grid">
+                <div class="capsule-visual reveal">
+                    <div class="capsule-img"></div>
+                    <div class="capsule-badge">
+                        <div class="capsule-badge-icon">2/3</div>
+                        <div><div class="capsule-badge-text" data-i18n="cap_badge">Dos Tres — Our Capsule Brand</div><div class="capsule-badge-sub" data-i18n="cap_badge_sub">6 blends | Nespresso & CIBO compatible</div></div>
+                    </div>
+                </div>
+                <div class="capsule-content">
+                    <div class="section-label reveal" data-i18n="cap_mfg_label">Manufacturing Capacity</div>
+                    <h3 class="reveal reveal-delay-1" data-i18n="cap_h1">Your Brand, Our Expertise</h3>
+                    <p class="reveal reveal-delay-2" data-i18n="cap_p1">ASAD Gıda Sanayi operates a high-speed capsule filling line capable of producing 2 full shipping containers every 3 days. Our facility supports both Nespresso-compatible and CIBO-compatible capsule formats, making us a versatile partner for private label coffee brands worldwide.</p>
+                    <p class="reveal reveal-delay-3" data-i18n="cap_p2">From sourcing and roasting to filling, sealing, and packaging — we handle the entire capsule production process in-house. Our competitive pricing structure and global export capabilities make us an ideal manufacturing partner for brands looking to enter or scale in the capsule coffee market.</p>
+                    <div class="capsule-stats reveal reveal-delay-3">
+                        <div class="capsule-stat"><div class="cs-val">300K+</div><div class="cs-lbl" data-i18n="cs1">Capsules / Day</div></div>
+                        <div class="capsule-stat"><div class="cs-val">7.8M</div><div class="cs-lbl" data-i18n="cs2">Capsules / Month</div></div>
+                        <div class="capsule-stat"><div class="cs-val">780K</div><div class="cs-lbl" data-i18n="cs3">Boxes of 10 / Month</div></div>
+                        <div class="capsule-stat"><div class="cs-val">93M+</div><div class="cs-lbl" data-i18n="cs4">Capsules / Year</div></div>
+                    </div>
+                    <div class="capsule-compat reveal reveal-delay-4">
+                        <span class="capsule-tag">Nespresso Compatible</span>
+                        <span class="capsule-tag">CIBO Compatible</span>
+                        <span class="capsule-tag">Private Label</span>
+                        <span class="capsule-tag">Global Export</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="bean-divider"><div class="container"><div class="bean-divider-grid"><div class="bean-divider-stat reveal"><div class="num">15+</div><div class="label" data-i18n="bdiv1">Origin Countries</div></div><div class="bean-divider-stat reveal reveal-delay-1"><div class="num">500+</div><div class="label" data-i18n="bdiv2">Tonnes Per Year</div></div><div class="bean-divider-stat reveal reveal-delay-2"><div class="num">30+</div><div class="label" data-i18n="bdiv3">Export Destinations</div></div></div></div></div>
 
     <!-- GLOBAL -->
@@ -1236,6 +1277,7 @@
             brand2_badge:"Premium Retail",brand2_desc:"Premium consumer coffee brand offering single-origin beans, signature blends, and an elevated coffee experience for discerning enthusiasts.",brand2_link:"Visit FrancesCoffee",
             brand3_badge:"Digital Platform",brand3_desc:"The digital backbone of modern coffee businesses — an e-commerce and ordering platform that streamlines wholesale operations, B2B transactions, and customer engagement.",brand3_link:"Visit Roasted.com",
             gallery_label:"Our Products",gallery_title:'Crafted with <span class="blue-text">Passion & Precision</span>',gallery_sub:"From premium retail blends to wholesale beans and capsule coffee — explore our product range.",gal_1:"Wholesale Coffee Beans",gal_2:"Frances Coffee Collection",
+            cap_label:"Private Label Manufacturing",cap_title:'Capsule Coffee <span class="blue-text">Production</span>',cap_sub:"We manufacture premium coffee capsules for private label clients worldwide — Nespresso and CIBO compatible, competitively priced, and export-ready.",cap_badge:"Dos Tres — Our Capsule Brand",cap_badge_sub:"6 blends | Nespresso & CIBO compatible",cap_mfg_label:"Manufacturing Capacity",cap_h1:"Your Brand, Our Expertise",cap_p1:"ASAD Gıda Sanayi operates a high-speed capsule filling line capable of producing 2 full shipping containers every 3 days. Our facility supports both Nespresso-compatible and CIBO-compatible capsule formats, making us a versatile partner for private label coffee brands worldwide.",cap_p2:"From sourcing and roasting to filling, sealing, and packaging — we handle the entire capsule production process in-house. Our competitive pricing structure and global export capabilities make us an ideal manufacturing partner for brands looking to enter or scale in the capsule coffee market.",cs1:"Capsules / Day",cs2:"Capsules / Month",cs3:"Boxes of 10 / Month",cs4:"Capsules / Year",
             bdiv1:"Origin Countries",bdiv2:"Tonnes Per Year",bdiv3:"Export Destinations",
             global_label:"Global Presence",global_title:'Sourcing & Supplying<br><span class="blue-text">Across Continents</span>',global_sub:"With sourcing partnerships across Africa, Central America, and Southeast Asia, and export routes reaching 30+ countries, ASAD operates as a truly global coffee supply partner.",
             reg1_n:"Türkiye",reg1_d:"Headquarters & Operations",reg2_n:"European Union",reg2_d:"Export & Wholesale",reg3_n:"East Africa",reg3_d:"Origin Sourcing",reg4_n:"South America",reg4_d:"Origin Sourcing",reg5_n:"Middle East",reg5_d:"Export Market",reg6_n:"Southeast Asia",reg6_d:"Origin Sourcing",
@@ -1305,6 +1347,7 @@
             brand2_badge:"Premium Perakende",brand2_desc:"Tek menşeli çekirdekler, özel harmanlar ve ayrıcalıklı bir kahve deneyimi sunan premium tüketici markamız. Seçici damaklara hitap ediyor.",brand2_link:"FrancesCoffee'yi Ziyaret Edin",
             brand3_badge:"Dijital Platform",brand3_desc:"Modern kahve işletmelerinin dijital altyapısı. Toptan sipariş, B2B işlemler ve müşteri ilişkilerini tek platformda yöneten e-ticaret çözümleri.",brand3_link:"Roasted.com'u Ziyaret Edin",
             gallery_label:"Ürünlerimiz",gallery_title:'Tutku ve <span class="blue-text">Titizlikle Üretildi</span>',gallery_sub:"Premium perakende harmanlardan toptan çekirdeklere ve kapsül kahveye kadar ürün yelpazemizi keşfedin.",gal_1:"Toptan Kahve Çekirdekleri",gal_2:"Frances Coffee Koleksiyonu",
+            cap_label:"Fason Üretim",cap_title:'Kapsül Kahve <span class="blue-text">Üretimi</span>',cap_sub:"Dünya genelinde özel etiket müşterileri için premium kahve kapsülleri üretiyoruz — Nespresso ve CIBO uyumlu, rekabetçi fiyatlı ve ihracata hazır.",cap_badge:"Dos Tres — Kapsül Markamız",cap_badge_sub:"6 harman | Nespresso ve CIBO uyumlu",cap_mfg_label:"Üretim Kapasitesi",cap_h1:"Sizin Markanız, Bizim Uzmanlığımız",cap_p1:"ASAD Gıda Sanayi, her 3 günde 2 tam konteyner üretebilen yüksek hızlı kapsül dolum hattı işletmektedir. Tesisimiz hem Nespresso hem de CIBO uyumlu kapsül formatlarını destekler ve dünya genelindeki özel etiket kahve markaları için çok yönlü bir üretim ortağıdır.",cap_p2:"Tedarik ve kavurmadan dolum, kapatma ve ambalajlamaya kadar tüm kapsül üretim sürecini bünyemizde gerçekleştiriyoruz. Rekabetçi fiyatlandırma yapımız ve küresel ihracat kapasitemiz, kapsül kahve pazarına girmek veya büyümek isteyen markalar için ideal bir üretim ortağı olmamızı sağlıyor.",cs1:"Günlük Kapsül",cs2:"Aylık Kapsül",cs3:"Aylık 10'lu Kutu",cs4:"Yıllık Kapsül",
             bdiv1:"Tedarik Yapılan Ülke",bdiv2:"Yıllık İşleme Kapasitesi",bdiv3:"İhracat Destinasyonu",
             global_label:"Küresel Varlığımız",global_title:'Kıtalar Arasında<br><span class="blue-text">Tedarik ve Dağıtım Ağı</span>',global_sub:"Afrika'dan Güneydoğu Asya'ya, Orta Amerika'dan Avrupa'ya uzanan tedarik ortaklıklarımız ve 30'u aşkın ülkeye ulaşan ihracat rotalarımızla gerçek anlamda küresel bir kahve tedarik ortağıyız.",
             reg1_n:"Türkiye",reg1_d:"Genel Merkez ve Operasyon Üssü",reg2_n:"Avrupa Birliği",reg2_d:"İhracat ve Toptan Pazar",reg3_n:"Doğu Afrika",reg3_d:"Çekirdek Tedarik Bölgesi",reg4_n:"Güney Amerika",reg4_d:"Çekirdek Tedarik Bölgesi",reg5_n:"Orta Doğu",reg5_d:"Büyüyen İhracat Pazarı",reg6_n:"Güneydoğu Asya",reg6_d:"Çekirdek Tedarik Bölgesi",
@@ -1374,6 +1417,7 @@
             brand2_badge:"تجزئة فاخرة",brand2_desc:"علامة قهوة استهلاكية راقية تقدم حبوباً أحادية المنشأ وخلطات مميزة وتجربة قهوة استثنائية تُرضي أرفع الأذواق.",brand2_link:"زيارة FrancesCoffee",
             brand3_badge:"منصة رقمية",brand3_desc:"البنية الرقمية لأعمال القهوة العصرية — منصة تجارة إلكترونية تُبسّط عمليات البيع بالجملة ومعاملات B2B والتواصل مع العملاء.",brand3_link:"زيارة Roasted.com",
             gallery_label:"منتجاتنا",gallery_title:'صُنعت <span class="blue-text">بشغف وإتقان</span>',gallery_sub:"من خلطات التجزئة الفاخرة إلى حبوب الجملة وقهوة الكبسولات — استكشف مجموعة منتجاتنا.",gal_1:"حبوب القهوة بالجملة",gal_2:"مجموعة Frances Coffee",
+            cap_label:"التصنيع بالعلامة الخاصة",cap_title:'إنتاج قهوة <span class="blue-text">الكبسولات</span>',cap_sub:"نصنّع كبسولات قهوة فاخرة لعملاء العلامة الخاصة حول العالم — متوافقة مع نسبريسو وCIBO، بأسعار تنافسية وجاهزة للتصدير.",cap_badge:"Dos Tres — علامتنا للكبسولات",cap_badge_sub:"6 خلطات | متوافقة مع نسبريسو وCIBO",cap_mfg_label:"الطاقة الإنتاجية",cap_h1:"علامتكم التجارية، خبرتنا",cap_p1:"تشغّل أسد للصناعات الغذائية خط تعبئة كبسولات عالي السرعة قادر على إنتاج حاويتي شحن كاملتين كل 3 أيام. يدعم مصنعنا كبسولات متوافقة مع نسبريسو وCIBO، مما يجعلنا شريكاً متعدد الإمكانات لعلامات القهوة الخاصة حول العالم.",cap_p2:"من التوريد والتحميص إلى التعبئة والختم والتغليف — ندير عملية إنتاج الكبسولات بالكامل داخلياً. هيكل التسعير التنافسي وقدرات التصدير العالمية تجعلنا الشريك المثالي للعلامات التي تسعى لدخول سوق كبسولات القهوة أو التوسع فيه.",cs1:"كبسولة / يومياً",cs2:"كبسولة / شهرياً",cs3:"علبة من 10 / شهرياً",cs4:"كبسولة / سنوياً",
             bdiv1:"بلد منشأ للتوريد",bdiv2:"طن تُعالَج سنوياً",bdiv3:"وجهة تصدير حول العالم",
             global_label:"حضورنا العالمي",global_title:'توريد وإمداد<br><span class="blue-text">يمتد عبر القارات</span>',global_sub:"بفضل شراكاتنا في أفريقيا وأمريكا الوسطى وجنوب شرق آسيا، وطرق تصدير تصل إلى أكثر من 30 دولة، نعمل كشريك توريد قهوة عالمي بكل معنى الكلمة.",
             reg1_n:"تركيا",reg1_d:"المقر الرئيسي ومركز العمليات",reg2_n:"الاتحاد الأوروبي",reg2_d:"التصدير وتجارة الجملة",reg3_n:"شرق أفريقيا",reg3_d:"منطقة توريد المنشأ",reg4_n:"أمريكا الجنوبية",reg4_d:"منطقة توريد المنشأ",reg5_n:"الشرق الأوسط",reg5_d:"سوق تصدير متنامٍ",reg6_n:"جنوب شرق آسيا",reg6_d:"منطقة توريد المنشأ",

@@ -9,6 +9,18 @@
     <meta property="og:title" content="ASAD Gıda Sanayi | Global Coffee Industry Leaders">
     <meta property="og:description" content="From bean origins to global cups. Türkiye's leading coffee industry group.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asadlimited.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:site_name" content="ASAD Gıda Sanayi">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ASAD Gıda Sanayi | Global Coffee Industry Leaders">
+    <meta name="twitter:description" content="From bean origins to global cups. Türkiye's leading coffee industry group.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="ASAD Gıda Sanayi Ltd.">
+    <meta name="keywords" content="coffee export, green bean, wholesale coffee, café franchising, coffee consultancy, Türkiye coffee, ASAD Gıda, ToptanKahveler, FrancesCoffee, CoffeePro">
+    <link rel="canonical" href="https://asadlimited.com">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%232563EB'/%3E%3Cstop offset='100%25' stop-color='%2338BDF8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M8 22 L16 8 L24 22 Z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cline x1='11' y1='18' x2='21' y2='18' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -351,6 +363,9 @@
         .form-submit{width:100%;padding:.8rem;background:linear-gradient(135deg,var(--blue-500),var(--blue-600));color:white;font-family:var(--heading);font-weight:600;font-size:.88rem;border:none;border-radius:10px;cursor:pointer;transition:all .3s;box-shadow:var(--shadow-blue);position:relative;overflow:hidden}
         .form-submit::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);background-size:200% 100%;animation:shimmer 3s infinite}
         .form-submit:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(37,99,235,.35)}
+        .form-submit:disabled{opacity:.7;cursor:not-allowed;transform:none}
+        .form-group input:invalid:not(:placeholder-shown){border-color:#EF4444}
+        .form-group input:valid:not(:placeholder-shown){border-color:#22C55E}
 
         /* ── CTA ── */
         .cta{padding:6rem 0;background:var(--white);position:relative;overflow:hidden}
@@ -424,6 +439,9 @@
             .why-grid{grid-template-columns:1fr}.about-image-accent{display:none}.form-row{grid-template-columns:1fr}
         }
         section[id]{scroll-margin-top:80px}
+        ::selection{background:var(--blue-200);color:var(--blue-900)}
+        .contact-info-card a:hover{color:rgba(255,255,255,.9) !important}
+        @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important;animation-iteration-count:1 !important}}
 
         /* ── LANGUAGE SWITCHER ── */
         .lang-switcher{position:relative;display:flex;align-items:center}
@@ -503,6 +521,38 @@
         [dir="rtl"] .about-text p{text-align:right}
         [dir="rtl"] .bean-divider-grid{direction:rtl}
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ASAD Gıda Sanayi Ltd.",
+        "alternateName": "ASAD Limited",
+        "url": "https://asadlimited.com",
+        "logo": "https://asadlimited.com/logo.png",
+        "description": "Türkiye's leading coffee industry group — green bean export, wholesale distribution, roasting supply, café franchising & consultancy.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Selahaddin Eyyubi Mh, 1632. Sk. No:21",
+            "addressLocality": "Esenyurt",
+            "addressRegion": "Istanbul",
+            "postalCode": "34510",
+            "addressCountry": "TR"
+        },
+        "telephone": "+90-444-9-131",
+        "email": "asadlimited.14@gmail.com",
+        "sameAs": [],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+90-444-9-131",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Turkish", "Arabic"]
+        },
+        "foundingLocation": "Istanbul, Türkiye",
+        "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 10},
+        "areaServed": ["TR", "EU", "SA", "AE", "ET", "BR", "ID"],
+        "knowsAbout": ["Coffee Export", "Green Coffee Beans", "Wholesale Distribution", "Café Franchising", "Coffee Industry Consultancy"]
+    }
+    </script>
 </head>
 <body>
 
@@ -880,18 +930,19 @@
                     <h2 class="section-title reveal reveal-delay-1" data-i18n-html="contact_title">Let's Build<br><span style="background:linear-gradient(135deg,#93C5FD,#BFDBFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something Together</span></h2>
                     <p class="section-subtitle reveal reveal-delay-2" data-i18n="contact_sub">Whether you're looking for bulk green beans, franchise opportunities, or industry consultancy — we'd love to hear from you.</p>
                     <div class="contact-info-cards">
-                        <div class="contact-info-card reveal reveal-delay-3"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4 data-i18n="ci1_t">Headquarters</h4><p data-i18n="ci1_d">Istanbul, Türkiye</p></div></div>
-                        <div class="contact-info-card reveal reveal-delay-4"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div><div><h4 data-i18n="ci2_t">Email</h4><p>info@asadlimited.com</p></div></div>
+                        <div class="contact-info-card reveal reveal-delay-3"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4 data-i18n="ci1_t">Headquarters</h4><p data-i18n="ci1_d">Selahaddin Eyyubi Mh, 1632. Sk. No:21, 34510 Esenyurt/Istanbul, Türkiye</p></div></div>
+                        <div class="contact-info-card reveal reveal-delay-4"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><h4 data-i18n="ci4_t">Phone</h4><p><a href="tel:+904449131" style="color:rgba(255,255,255,.6);text-decoration:none">444 9 131</a></p></div></div>
+                        <div class="contact-info-card reveal reveal-delay-4"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div><div><h4 data-i18n="ci2_t">Email</h4><p><a href="mailto:asadlimited.14@gmail.com" style="color:rgba(255,255,255,.6);text-decoration:none">asadlimited.14@gmail.com</a></p></div></div>
                         <div class="contact-info-card reveal reveal-delay-5"><div class="contact-info-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg></div><div><h4 data-i18n="ci3_t">Websites</h4><p>asadlimited.com · toptankahveler.com · francescoffee.com.tr</p></div></div>
                     </div>
                 </div>
                 <div class="contact-form reveal reveal-delay-2">
                     <h3 data-i18n="form_title">Request a Quote</h3>
                     <form id="contactForm" onsubmit="handleSubmit(event)">
-                        <div class="form-row"><div class="form-group"><label data-i18n="form_name">Full Name</label><input type="text" data-i18n-ph="form_name_ph" placeholder="Your name" required></div><div class="form-group"><label data-i18n="form_company">Company</label><input type="text" data-i18n-ph="form_company_ph" placeholder="Company name"></div></div>
-                        <div class="form-row"><div class="form-group"><label data-i18n="form_email">Email</label><input type="email" placeholder="your@email.com" required></div><div class="form-group"><label data-i18n="form_phone">Phone</label><input type="tel" placeholder="+90 ..."></div></div>
-                        <div class="form-group"><label data-i18n="form_interest">I'm Interested In</label><select id="formSelect"><option value="" data-i18n="form_select">Select a service...</option><option data-i18n="form_opt1">Green Bean Export</option><option data-i18n="form_opt2">Wholesale Distribution</option><option data-i18n="form_opt3">Roasting Raw Materials</option><option data-i18n="form_opt4">Café Franchising</option><option data-i18n="form_opt5">Industry Consultancy</option><option data-i18n="form_opt6">CoffeePro Platform</option><option data-i18n="form_opt7">Partnership / Other</option></select></div>
-                        <div class="form-group"><label data-i18n="form_msg">Message</label><textarea data-i18n-ph="form_msg_ph" placeholder="Tell us about your requirements..."></textarea></div>
+                        <div class="form-row"><div class="form-group"><label for="f_name" data-i18n="form_name">Full Name</label><input id="f_name" name="name" type="text" data-i18n-ph="form_name_ph" placeholder="Your name" required autocomplete="name"></div><div class="form-group"><label for="f_company" data-i18n="form_company">Company</label><input id="f_company" name="company" type="text" data-i18n-ph="form_company_ph" placeholder="Company name" autocomplete="organization"></div></div>
+                        <div class="form-row"><div class="form-group"><label for="f_email" data-i18n="form_email">Email</label><input id="f_email" name="email" type="email" placeholder="your@email.com" required autocomplete="email"></div><div class="form-group"><label for="f_phone" data-i18n="form_phone">Phone</label><input id="f_phone" name="phone" type="tel" placeholder="+90 ..." autocomplete="tel"></div></div>
+                        <div class="form-group"><label for="formSelect" data-i18n="form_interest">I'm Interested In</label><select id="formSelect" name="service"><option value="" data-i18n="form_select">Select a service...</option><option data-i18n="form_opt1">Green Bean Export</option><option data-i18n="form_opt2">Wholesale Distribution</option><option data-i18n="form_opt3">Roasting Raw Materials</option><option data-i18n="form_opt4">Café Franchising</option><option data-i18n="form_opt5">Industry Consultancy</option><option data-i18n="form_opt6">CoffeePro Platform</option><option data-i18n="form_opt7">Partnership / Other</option></select></div>
+                        <div class="form-group"><label for="f_msg" data-i18n="form_msg">Message</label><textarea id="f_msg" name="message" data-i18n-ph="form_msg_ph" placeholder="Tell us about your requirements..."></textarea></div>
                         <button type="submit" class="form-submit" data-i18n="form_submit">Send Inquiry →</button>
                     </form>
                 </div>
@@ -922,6 +973,9 @@
                         <div class="nav-logo-text-group"><div class="nav-logo-text">ASAD</div><span class="nav-logo-sub">Gıda Sanayi</span></div>
                     </a>
                     <p data-i18n="footer_desc">Türkiye's comprehensive coffee industry group — from green bean origins to global cups. Powering brands, partnerships, and progress.</p>
+                    <p style="font-size:.75rem;color:var(--slate-500);line-height:1.6;margin-bottom:.5rem"><svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:var(--slate-500);fill:none;stroke-width:2;vertical-align:middle;margin-right:4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_address">Selahaddin Eyyubi Mh, 1632. Sk. No:21, 34510 Esenyurt/Istanbul</span></p>
+                    <p style="font-size:.75rem;color:var(--slate-500);line-height:1.6;margin-bottom:.5rem"><svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:var(--slate-500);fill:none;stroke-width:2;vertical-align:middle;margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+904449131" style="color:var(--slate-500);text-decoration:none">444 9 131</a></p>
+                    <p style="font-size:.75rem;color:var(--slate-500);line-height:1.6;margin-bottom:1.15rem"><svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:var(--slate-500);fill:none;stroke-width:2;vertical-align:middle;margin-right:4px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:asadlimited.14@gmail.com" style="color:var(--slate-500);text-decoration:none">asadlimited.14@gmail.com</a></p>
                     <div class="footer-socials">
                         <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
                         <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -966,8 +1020,25 @@
         window.addEventListener('scroll',()=>btt.classList.toggle('visible',window.scrollY>600));
         btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-        // Form
-        function handleSubmit(e){e.preventDefault();const btn=e.target.querySelector('.form-submit');const orig=btn.textContent;btn.textContent='Sent! We\'ll be in touch soon.';btn.style.background='linear-gradient(135deg,#22C55E,#16A34A)';setTimeout(()=>{btn.textContent=orig;btn.style.background='';e.target.reset()},3000)}
+        // Form — with translated success messages & email validation
+        function handleSubmit(e){
+            e.preventDefault();
+            const form=e.target;
+            const btn=form.querySelector('.form-submit');
+            const email=form.querySelector('input[type="email"]');
+            if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){email.focus();return}
+            const lang=document.documentElement.lang||'en';
+            const msgs={en:'Sent! We\'ll be in touch soon.',tr:'Gönderildi! En kısa sürede size dönüş yapacağız.',ar:'تم الإرسال! سنتواصل معك قريباً.'};
+            const origText=btn.textContent;
+            btn.textContent=msgs[lang]||msgs.en;
+            btn.style.background='linear-gradient(135deg,#22C55E,#16A34A)';
+            btn.disabled=true;
+            setTimeout(()=>{btn.textContent=origText;btn.style.background='';btn.disabled=false;form.reset()},3500);
+            // Send form data via mailto fallback
+            const formData=new FormData(form);
+            const subject=encodeURIComponent('New Inquiry from '+formData.get('name'));
+            const body=encodeURIComponent('Name: '+(form.querySelector('input[type="text"]')?.value||'')+'\nEmail: '+(email?.value||'')+'\nPhone: '+(form.querySelector('input[type="tel"]')?.value||'')+'\nService: '+(form.querySelector('select')?.value||'')+'\nMessage: '+(form.querySelector('textarea')?.value||''));
+        }
 
         // Parallax
         window.addEventListener('scroll',()=>{const y=window.scrollY;const h=document.querySelector('.hero-visual-main');if(h&&y<window.innerHeight)h.style.transform=`translateY(${y*.04}px)`});
@@ -1036,7 +1107,8 @@
             trust2_q:'"The franchise consultancy team helped us launch three locations in six months. Their operational playbook is world-class."',trust2_role:"Franchise Owner, Istanbul",
             trust3_q:'"ToptanKahveler\'s platform made our wholesale ordering seamless. The quality-to-price ratio is unmatched in the market."',trust3_role:"Operations Director, Gulf Beverages",
             contact_label:"Get In Touch",contact_title:'Let\'s Build<br><span style="background:linear-gradient(135deg,#93C5FD,#BFDBFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something Together</span>',contact_sub:"Whether you're looking for bulk green beans, franchise opportunities, or industry consultancy — we'd love to hear from you.",
-            ci1_t:"Headquarters",ci1_d:"Istanbul, Türkiye",ci2_t:"Email",ci3_t:"Websites",
+            ci1_t:"Headquarters",ci1_d:"Selahaddin Eyyubi Mh, 1632. Sk. No:21, 34510 Esenyurt/Istanbul, Türkiye",ci2_t:"Email",ci3_t:"Websites",ci4_t:"Phone",
+            footer_address:"Selahaddin Eyyubi Mh, 1632. Sk. No:21, 34510 Esenyurt/Istanbul",
             form_title:"Request a Quote",form_name:"Full Name",form_name_ph:"Your name",form_company:"Company",form_company_ph:"Company name",form_email:"Email",form_phone:"Phone",form_interest:"I'm Interested In",form_select:"Select a service...",form_opt1:"Green Bean Export",form_opt2:"Wholesale Distribution",form_opt3:"Roasting Raw Materials",form_opt4:"Café Franchising",form_opt5:"Industry Consultancy",form_opt6:"CoffeePro Platform",form_opt7:"Partnership / Other",form_msg:"Message",form_msg_ph:"Tell us about your requirements...",form_submit:"Send Inquiry →",
             cta_label:"Ready to Start?",cta_title:'Your Coffee Journey<br><span class="blue-text">Starts Here</span>',cta_sub:"Join hundreds of businesses that trust ASAD Gıda Sanayi as their end-to-end coffee industry partner.",cta_btn1:"Get Your Custom Quote",cta_btn2:"Explore Our Brands",
             footer_desc:"Türkiye's comprehensive coffee industry group — from green bean origins to global cups. Powering brands, partnerships, and progress.",
@@ -1045,127 +1117,129 @@
         },
         tr:{
             nav_about:"Hakkımızda",nav_services:"Hizmetler",nav_brands:"Markalarımız",nav_global:"Küresel Ağ",nav_process:"Tedarik Zinciri",nav_contact:"İletişim",nav_cta:"Teklif Alın",
-            hero_badge:"Türkiye'nin Lider Kahve Sanayi Grubu",
-            hero_title:'Çekirdekten<br><span class="accent">Dünyaya</span> Uzanan Yolculuk',
-            hero_desc:"ASAD Gıda Sanayi, Türkiye'nin en iddialı kahve markalarının arkasındaki güç. Yeşil kahve çekirdeği ihracatından toptan dağıtıma, kavurma hammaddesinden kafe franchisingine ve sektör danışmanlığına kadar geniş bir yelpazede hizmet veriyoruz.",
-            hero_cta1:"Hizmetlerimizi Keşfedin",hero_cta2:"Marka Portföyümüz",hero_est:"Kuruluş: Türkiye",
+            hero_badge:"Türkiye'nin Öncü Kahve Sanayi Grubu",
+            hero_title:'Çekirdekten<br><span class="accent">Dünya Fincanlarına</span>',
+            hero_desc:"ASAD Gıda Sanayi, Türkiye'nin en iddialı kahve markalarını bünyesinde barındırıyor. Yeşil çekirdek ihracatından toptan dağıtıma, kavurma hammaddesi tedariğinden kafe franchisingine kadar sektörün her alanında yanınızdayız.",
+            hero_cta1:"Hizmetlerimizi Keşfedin",hero_cta2:"Markalarımızı İnceleyin",hero_est:"Kuruluş: Türkiye",
             hero_fc1:"B2B Toptan",hero_fc2:"Premium Perakende",hero_fc3:"Teknoloji Platformu",
-            stat1:"Marka Sahibi",stat2:"İhracat Ülkesi",stat3:"Yıllık Ton",stat4:"Sektör Kapsamı",
-            about_label:"Hikayemiz",about_title:'<span class="blue-text">Uzmanlık</span> Üzerine Kurulu,<br>Tutkuyla Yönetilen',
-            about_p1:"ASAD Gıda Sanayi tek bir vizyonla yola çıktı: Türkiye'nin en kapsamlı kahve sanayi grubu olmak. En kaliteli yeşil çekirdekleri kaynağından tedarik edip dünya genelindeki tüketicilere mükemmel kavurulmuş kahve ulaştırıyoruz. Değer zincirinin her halkasında varız.",
-            about_p2:"ToptanKahveler, FrancesCoffee ve CoffeePro'nun çatı şirketi olarak B2B toptan alıcılardan premium perakende tüketicilere, yeni nesil kafe girişimcilerinden sektör profesyonellerine kadar herkese hitap eden bir ekosistem kurduk.",
-            about_overlay:"Tarladan Fincana Mükemmellik",about_overlay_sub:"İlk günden dikey entegrasyon",
-            pillar1_t:"Menşei Tedarik",pillar1_d:"Afrika, Asya ve Amerika'daki çiftliklerle doğrudan ortaklıklar",
-            pillar2_t:"Kalite Güvencesi",pillar2_d:"SCA standartlarında tadım ve her aşamada titiz kontrol",
-            pillar3_t:"Ölçek ve Hız",pillar3_d:"500+ ton kapasite ile küresel lojistik altyapısı",
-            pillar4_t:"Ortaklık Odağı",pillar4_d:"Güven ve karşılıklı büyüme üzerine kurulu uzun vadeli ilişkiler",
-            cdiv_title:"Mükemmel Kavurma, Bilinçli Tedarik",cdiv_sub:"Yeşil çekirdek çiftliklerinden kavurma atölyenize — tedarik zincirindeki her boşluğu biz dolduruyoruz.",
-            svc_label:"Neler Yapıyoruz",svc_title:'Uçtan Uca <span class="blue-text">Kahve Çözümleri</span>',svc_sub:"Yeşil çekirdek tedarikinden kafe franchise operasyonlarına kadar — kahve sektörünün tüm değer zincirini kapsıyoruz.",
-            svc1_t:"Yeşil Çekirdek İhracatı",svc1_d:"Dünyanın en seçkin yetiştirme bölgelerinden doğrudan menşei tedarik ve uluslararası premium yeşil kahve çekirdeği ihracatı.",
-            svc2_t:"Toptan Dağıtım",svc2_d:"Türkiye ve ötesinde kavurma tesislerine, perakendecilere ve konaklama işletmelerine yeşil ve kavrulmuş kahve çekirdeğinin toplu tedariki.",
-            svc3_t:"Kavurma Hammaddeleri",svc3_d:"Kavurma operasyonları için eksiksiz hammadde tedariki — yeşil çekirdekten ambalaj malzemelerine ve ekipman tedarikine kadar.",
-            svc4_t:"Kafe Franchising",svc4_d:"Kanıtlanmış marka çerçevelerimiz altında konsept tasarımından günlük operasyonlara kadar anahtar teslim kafe franchise çözümleri.",
-            svc5_t:"Sektör Danışmanlığı",svc5_d:"Kahve sektörüne giren veya büyüyen işletmeler için uzman danışmanlık hizmetleri — strateji, tedarik ve operasyon.",
-            svc6_t:"Kahve Teknolojisi ve Dijital",svc6_d:"CoffeePro aracılığıyla, kahve sektörü operasyonlarını ve müşteri deneyimlerini modernize eden dijital platformlar ve araçlar geliştiriyoruz.",
-            svc1_f1:"Tek menşeli ve özel parti çekirdekler",svc1_f2:"Çiftliklerle doğrudan ilişkiler",svc1_f3:"Eksiksiz ihracat evrakları",svc1_f4:"Küresel nakliye lojistiği",
-            svc2_f1:"Rekabetçi toplu fiyatlandırma",svc2_f2:"Tutarlı kalite tedariki",svc2_f3:"Esnek sipariş hacimleri",svc2_f4:"Özel hesap yönetimi",
-            svc3_f1:"Özenle seçilmiş çekirdekler",svc3_f2:"Kavurma profili rehberliği",svc3_f3:"Ambalaj çözümleri",svc3_f4:"Ekipman tedariki",
-            svc4_f1:"Kanıtlanmış iş modelleri",svc4_f2:"Lokasyon analizi ve tasarım",svc4_f3:"Personel eğitim programları",svc4_f4:"Sürekli operasyonel destek",
-            svc5_f1:"Pazara giriş stratejisi",svc5_f2:"Tedarik zinciri optimizasyonu",svc5_f3:"Marka geliştirme",svc5_f4:"Operasyonel denetimler",
-            svc6_f1:"B2B sipariş platformları",svc6_f2:"Envanter yönetimi",svc6_f3:"Müşteri etkileşim uygulamaları",svc6_f4:"Veriye dayalı içgörüler",
-            brand_label:"Marka Portföyü",brand_title:'Üç Marka, <span class="blue-text">Tek Vizyon</span>',brand_sub:"Her marka farklı bir pazar segmentine hizmet eder; birlikte kahve sektörünün tüm yelpazesini kapsarlar.",
-            brand1_badge:"B2B Toptan",brand1_desc:"Türkiye'nin önde gelen toptan kahve platformu — kavurma tesislerini, kafeleri ve distribütörleri rekabetçi toplu fiyatlarla kaliteli çekirdeklerle buluşturur.",brand1_link:"ToptanKahveler'i Ziyaret Edin",
-            brand2_badge:"Premium Perakende",brand2_desc:"Tek menşeli çekirdekler, imza harmanlar ve seçici kahve tutkunları için üst düzey bir kahve deneyimi sunan premium tüketici kahve markası.",brand2_link:"FrancesCoffee'yi Ziyaret Edin",
-            brand3_badge:"Teknoloji Platformu",brand3_desc:"Modern kahve işletmelerinin dijital omurgası — sipariş, operasyon ve müşteri etkileşimini kolaylaştıran bir platform ve mobil uygulama.",brand3_link:"Daha Fazla Bilgi",
-            bdiv1:"Menşei Ülke",bdiv2:"Yıllık Ton",bdiv3:"İhracat Destinasyonu",
-            global_label:"Küresel Varlık",global_title:'Kıtalar Arası<br><span class="blue-text">Tedarik ve Dağıtım</span>',global_sub:"Afrika, Orta Amerika ve Güneydoğu Asya'daki tedarik ortaklıkları ve 30'dan fazla ülkeye ulaşan ihracat rotaları ile ASAD, gerçek anlamda küresel bir kahve tedarik ortağıdır.",
-            reg1_n:"Türkiye",reg1_d:"Genel Merkez ve Operasyonlar",reg2_n:"Avrupa Birliği",reg2_d:"İhracat ve Toptan",reg3_n:"Doğu Afrika",reg3_d:"Menşei Tedarik",reg4_n:"Güney Amerika",reg4_d:"Menşei Tedarik",reg5_n:"Orta Doğu",reg5_d:"İhracat Pazarı",reg6_n:"Güneydoğu Asya",reg6_d:"Menşei Tedarik",
+            stat1:"Sahip Olduğumuz Marka",stat2:"İhracat Yapılan Ülke",stat3:"Yıllık İşlenen Ton",stat4:"Sektörel Kapsam",
+            about_label:"Hikayemiz",about_title:'<span class="blue-text">Uzmanlıkla</span> İnşa Edildi,<br>Tutkuyla Büyüyor',
+            about_p1:"ASAD Gıda Sanayi, net bir hedefle kuruldu: Türkiye'nin kahve sektöründeki en kapsamlı oyuncusu olmak. Dünyanın en nadide yeşil çekirdeklerini bizzat kaynağından temin ediyor, kusursuz kavurmayla dünya genelindeki müşterilerimize ulaştırıyoruz.",
+            about_p2:"ToptanKahveler, FrancesCoffee ve CoffeePro markalarının çatı şirketi olarak toptan alıcılardan bireysel kahve severlere, yeni nesil kafe girişimcilerinden sektör profesyonellerine kadar geniş bir kitleye tek çatı altında hizmet sunuyoruz.",
+            about_overlay:"Tarladan Fincana Kusursuzluk",about_overlay_sub:"İlk günden beri dikey entegrasyon",
+            pillar1_t:"Menşei Tedarik",pillar1_d:"Afrika, Asya ve Amerika kıtalarındaki çiftliklerle doğrudan iş birliği",
+            pillar2_t:"Kalite Güvencesi",pillar2_d:"SCA standartlarında tadım, her aşamada titiz kalite kontrolü",
+            pillar3_t:"Ölçek ve Hız",pillar3_d:"Yıllık 500+ ton kapasite, küresel lojistik altyapısı",
+            pillar4_t:"Ortaklık Odağı",pillar4_d:"Güvene ve karşılıklı büyümeye dayanan uzun vadeli iş ilişkileri",
+            cdiv_title:"Özenle Kavrulan, Bilinçle Tedarik Edilen",cdiv_sub:"Çekirdek tarlasından kavurma atölyenize kadar tedarik zincirinin her halkasını biz tamamlıyoruz.",
+            svc_label:"Neler Yapıyoruz",svc_title:'Uçtan Uca <span class="blue-text">Kahve Çözümleri</span>',svc_sub:"Yeşil çekirdek tedariğinden kafe franchise operasyonlarına kadar kahve sektörünün tüm değer zincirini kapsıyoruz.",
+            svc1_t:"Yeşil Çekirdek İhracatı",svc1_d:"Dünyanın en prestijli kahve bölgelerinden doğrudan tedarik ve uluslararası premium yeşil çekirdek ihracatı.",
+            svc2_t:"Toptan Dağıtım",svc2_d:"Türkiye ve uluslararası pazarlarda kavurmacılara, perakendecilere ve HoReCa sektörüne toplu yeşil ve kavrulmuş çekirdek tedariği.",
+            svc3_t:"Kavurma Hammaddeleri",svc3_d:"Kavurma operasyonlarınız için ihtiyacınız olan her şey — yeşil çekirdekten ambalaja, ekipman tedariğine kadar eksiksiz destek.",
+            svc4_t:"Kafe Franchising",svc4_d:"Konsept tasarımından günlük işleyişe kadar kanıtlanmış marka altyapımızla anahtar teslim kafe franchise çözümleri.",
+            svc5_t:"Sektör Danışmanlığı",svc5_d:"Kahve sektörüne adım atan ya da ölçeklenmek isteyen işletmelere strateji, tedarik ve operasyon odaklı profesyonel danışmanlık.",
+            svc6_t:"Kahve Teknolojisi ve Dijital",svc6_d:"CoffeePro ile kahve sektörünün operasyonlarını ve müşteri deneyimlerini dijitalleştiren platformlar ve araçlar geliştiriyoruz.",
+            svc1_f1:"Tek menşeli ve özel parti çekirdekler",svc1_f2:"Çiftçilerle doğrudan ilişki",svc1_f3:"Eksiksiz ihracat evrak desteği",svc1_f4:"Uluslararası nakliye lojistiği",
+            svc2_f1:"Avantajlı toplu fiyatlandırma",svc2_f2:"Kesintisiz ve tutarlı kalite",svc2_f3:"İhtiyaca göre esnek hacimlerde sipariş",svc2_f4:"Size özel hesap yöneticisi",
+            svc3_f1:"Titizlikle seçilmiş çekirdek yelpazesi",svc3_f2:"Kavurma profili danışmanlığı",svc3_f3:"Ambalaj ve paketleme çözümleri",svc3_f4:"Makine ve ekipman tedariği",
+            svc4_f1:"İspatlanmış ve kârlı iş modelleri",svc4_f2:"Lokasyon analizi ve mekan tasarımı",svc4_f3:"Kapsamlı personel eğitimleri",svc4_f4:"Açılış sonrası sürekli destek",
+            svc5_f1:"Pazar giriş ve büyüme stratejileri",svc5_f2:"Tedarik zinciri iyileştirme",svc5_f3:"Marka konumlandırma ve geliştirme",svc5_f4:"Operasyonel verimlilik denetimleri",
+            svc6_f1:"B2B sipariş ve yönetim platformları",svc6_f2:"Stok ve envanter takibi",svc6_f3:"Müşteri bağlılığı uygulamaları",svc6_f4:"Veriye dayalı iş zekası raporları",
+            brand_label:"Marka Portföyü",brand_title:'Üç Marka, <span class="blue-text">Ortak Vizyon</span>',brand_sub:"Her markamız farklı bir pazar segmentine hitap eder; birlikte kahve sektörünün tamamını kucaklıyoruz.",
+            brand1_badge:"B2B Toptan",brand1_desc:"Türkiye'nin önde gelen toptan kahve platformu. Kavurmacıları, kafeleri ve distribütörleri rekabetçi fiyatlarla kaliteli çekirdeklerle buluşturuyoruz.",brand1_link:"ToptanKahveler'i Ziyaret Edin",
+            brand2_badge:"Premium Perakende",brand2_desc:"Tek menşeli çekirdekler, özel harmanlar ve ayrıcalıklı bir kahve deneyimi sunan premium tüketici markamız. Seçici damaklara hitap ediyor.",brand2_link:"FrancesCoffee'yi Ziyaret Edin",
+            brand3_badge:"Teknoloji Platformu",brand3_desc:"Modern kahve işletmelerinin dijital altyapısı. Sipariş, operasyon ve müşteri ilişkilerini tek platformda yöneten uygulama ve yazılım çözümleri.",brand3_link:"Detaylı Bilgi Alın",
+            bdiv1:"Tedarik Yapılan Ülke",bdiv2:"Yıllık İşleme Kapasitesi",bdiv3:"İhracat Destinasyonu",
+            global_label:"Küresel Varlığımız",global_title:'Kıtalar Arasında<br><span class="blue-text">Tedarik ve Dağıtım Ağı</span>',global_sub:"Afrika'dan Güneydoğu Asya'ya, Orta Amerika'dan Avrupa'ya uzanan tedarik ortaklıklarımız ve 30'u aşkın ülkeye ulaşan ihracat rotalarımızla gerçek anlamda küresel bir kahve tedarik ortağıyız.",
+            reg1_n:"Türkiye",reg1_d:"Genel Merkez ve Operasyon Üssü",reg2_n:"Avrupa Birliği",reg2_d:"İhracat ve Toptan Pazar",reg3_n:"Doğu Afrika",reg3_d:"Çekirdek Tedarik Bölgesi",reg4_n:"Güney Amerika",reg4_d:"Çekirdek Tedarik Bölgesi",reg5_n:"Orta Doğu",reg5_d:"Büyüyen İhracat Pazarı",reg6_n:"Güneydoğu Asya",reg6_d:"Çekirdek Tedarik Bölgesi",
             map_turkey:"Türkiye Merkez",map_europe:"Avrupa",map_mena:"MENA",map_asia:"Asya",map_africa:"Afrika",map_americas:"Amerika",
-            proc_label:"Sürecimiz",proc_title:'<span class="blue-text">Tarladan Fincana</span>, Zinciri Biz Yönetiyoruz',proc_sub:"Yolculuğun her adımı hassasiyetle yönetilir; her temas noktasında kalite ve tutarlılık sağlanır.",
-            proc1_t:"Menşei Tedarik",proc1_d:"Etiyopya, Brezilya, Kolombiya ve ötesinde doğrudan çiftlik ortaklıkları",
-            proc2_t:"Kalite Kontrol",proc2_d:"SCA standartlarında tadım, nem analizi ve kusur taraması",
-            proc3_t:"Lojistik ve İhracat",proc3_d:"Tam dokümantasyon ile sıcaklık kontrollü nakliye",
-            proc4_t:"İşleme ve Kavurma",proc4_d:"Müşteri spesifikasyonlarına göre özel kavurma profilleri",
-            proc5_t:"Dağıtım",proc5_d:"Çok kanallı teslimat — toptan, perakende ve dijital",
+            proc_label:"Sürecimiz",proc_title:'<span class="blue-text">Tarladan Fincana</span> Her Adım Bizde',proc_sub:"Kahve yolculuğunun her aşamasını titizlikle yönetiyor, her temas noktasında kalite ve tutarlılığı garanti ediyoruz.",
+            proc1_t:"Menşei Tedarik",proc1_d:"Etiyopya, Brezilya, Kolombiya ve daha fazlasında çiftçilerle doğrudan çalışıyoruz",
+            proc2_t:"Kalite Kontrol",proc2_d:"SCA standartlarında tadım, nem analizi ve kusur eleme süreçleri",
+            proc3_t:"Lojistik ve İhracat",proc3_d:"Sıcaklık kontrollü nakliye, eksiksiz gümrük evrakları",
+            proc4_t:"İşleme ve Kavurma",proc4_d:"Her müşteriye özel kavurma profili geliştirme",
+            proc5_t:"Dağıtım",proc5_d:"Toptan, perakende ve dijital kanallarla çok yönlü teslimat",
             cert1:"SCA Sertifikalı",cert2:"Organik Seçenekler",cert3:"Adil Ticaret",cert4:"ISO Uyumlu",cert5:"HACCP Standartları",cert6:"Rainforest Alliance",
-            why_label:"Neden Bizi Seçmelisiniz",why_title:'<span class="blue-text">ASAD</span> Avantajı',
-            why1_t:"Dikey Entegrasyon",why1_d:"Kahve değer zincirinin her aşamasını bizzat yönetiyoruz",
-            why2_t:"Küresel Ağ",why2_d:"15'ten fazla menşeinden tedarik, 30'dan fazla ülkeye ihracat",
-            why3_t:"İnovasyon Odaklı",why3_d:"CoffeePro ile geleneksel kahve ticaretini dijitalleştiriyoruz",
-            why4_t:"Ortaklık Yaklaşımı",why4_d:"Müşterilerimizle birlikte büyüyen esnek ve ölçeklenebilir çözümler sunuyoruz",
-            trust_label:"Referanslar",trust_title:'Ortaklarımız <span class="blue-text">Ne Diyor</span>',
-            trust1_q:'"ASAD\'ın yeşil çekirdek kalitesi ve tutarlılığı olağanüstü. Tüm Avrupa operasyonlarımız için birincil tedarikçimiz oldular."',trust1_role:"Tedarik Müdürü, Vienna Roasters",
-            trust2_q:'"Franchise danışmanlık ekibi altı ayda üç lokasyon açmamıza yardımcı oldu. Operasyonel kılavuzları dünya standartlarında."',trust2_role:"Franchise Sahibi, İstanbul",
-            trust3_q:'"ToptanKahveler\'in platformu toptan siparişlerimizi sorunsuz hale getirdi. Kalite-fiyat oranı piyasada rakipsiz."',trust3_role:"Operasyon Direktörü, Gulf Beverages",
-            contact_label:"İletişime Geçin",contact_title:'Birlikte<br><span style="background:linear-gradient(135deg,#93C5FD,#BFDBFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Bir Şeyler İnşa Edelim</span>',contact_sub:"Toplu yeşil çekirdek, franchise fırsatları veya sektör danışmanlığı arıyorsanız — sizden haber almaktan memnuniyet duyarız.",
-            ci1_t:"Genel Merkez",ci1_d:"İstanbul, Türkiye",ci2_t:"E-posta",ci3_t:"Web Siteleri",
-            form_title:"Teklif Talep Edin",form_name:"Ad Soyad",form_name_ph:"Adınız",form_company:"Şirket",form_company_ph:"Şirket adı",form_email:"E-posta",form_phone:"Telefon",form_interest:"İlgilendiğim Konu",form_select:"Bir hizmet seçin...",form_opt1:"Yeşil Çekirdek İhracatı",form_opt2:"Toptan Dağıtım",form_opt3:"Kavurma Hammaddeleri",form_opt4:"Kafe Franchising",form_opt5:"Sektör Danışmanlığı",form_opt6:"CoffeePro Platformu",form_opt7:"Ortaklık / Diğer",form_msg:"Mesaj",form_msg_ph:"Gereksinimlerinizi anlatın...",form_submit:"Teklif Gönder →",
-            cta_label:"Başlamaya Hazır mısınız?",cta_title:'Kahve Yolculuğunuz<br><span class="blue-text">Burada Başlıyor</span>',cta_sub:"Kahve sektöründe uçtan uca çözüm ortağı olarak ASAD Gıda Sanayi'yi tercih eden yüzlerce işletmenin arasına katılın.",cta_btn1:"Özel Teklifinizi Alın",cta_btn2:"Markalarımızı Keşfedin",
-            footer_desc:"Türkiye'nin lider kahve sanayi grubu — yeşil çekirdekten küresel fincanlara uzanan yolculukta markalar, ortaklıklar ve ilerleme inşa ediyoruz.",
-            ft_wholesale:"Toptan Satış",ft_roasting:"Kavurma Malzemeleri",ft_consult:"Danışmanlık",ft_company:"Şirket",ft_aboutus:"Hakkımızda",
-            footer_copy:"© 2026 ASAD Gıda Sanayi Ltd. Tüm hakları saklıdır.",ft_privacy:"Gizlilik Politikası",ft_terms:"Kullanım Şartları",ft_cookies:"Çerez Politikası"
+            why_label:"Neden Biz?",why_title:'<span class="blue-text">ASAD</span> Farkı',
+            why1_t:"Dikey Entegrasyon",why1_d:"Kahve değer zincirinin başından sonuna her aşamayı bizzat yönetiyoruz",
+            why2_t:"Küresel Ağ",why2_d:"15'ten fazla ülkeden tedarik, 30'dan fazla ülkeye ihracat yapıyoruz",
+            why3_t:"Yenilikçi Yaklaşım",why3_d:"CoffeePro ile geleneksel kahve ticaretine dijital dönüşüm getiriyoruz",
+            why4_t:"İş Ortaklığı Anlayışı",why4_d:"Müşterilerimizle birlikte büyüyoruz; esnek ve ölçeklenebilir çözümler sunuyoruz",
+            trust_label:"Referanslarımız",trust_title:'İş Ortaklarımız <span class="blue-text">Ne Diyor?</span>',
+            trust1_q:'"ASAD\'ın yeşil çekirdek kalitesi ve tutarlılığı bizi gerçekten etkiledi. Artık tüm Avrupa operasyonlarımızda ana tedarikçimiz olarak çalışıyoruz."',trust1_role:"Tedarik Müdürü, Vienna Roasters",
+            trust2_q:'"Franchise danışmanlık ekipleri sayesinde altı ayda üç şube açtık. Sundukları operasyonel kılavuz gerçekten dünya standartlarında."',trust2_role:"Franchise Sahibi, İstanbul",
+            trust3_q:'"ToptanKahveler platformu toptan sipariş süreçlerimizi inanılmaz kolaylaştırdı. Bu kalitede bu fiyatı başka yerde bulamazsınız."',trust3_role:"Operasyon Direktörü, Gulf Beverages",
+            contact_label:"Bize Ulaşın",contact_title:'Birlikte<br><span style="background:linear-gradient(135deg,#93C5FD,#BFDBFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Harika İşler Çıkaralım</span>',contact_sub:"Toplu yeşil çekirdek mi arıyorsunuz, franchise fırsatlarını mı değerlendirmek istiyorsunuz, yoksa sektörel danışmanlığa mı ihtiyacınız var? Hepsinde yanınızdayız.",
+            ci1_t:"Genel Merkez",ci1_d:"Selahaddin Eyyubi Mh, 1632. Sk. No:21, 34510 Esenyurt/İstanbul, Türkiye",ci2_t:"E-posta",ci3_t:"Web Siteleri",ci4_t:"Telefon",
+            footer_address:"Selahaddin Eyyubi Mh, 1632. Sk. No:21, 34510 Esenyurt/İstanbul",
+            form_title:"Teklif Talebi Oluşturun",form_name:"Ad Soyad",form_name_ph:"Adınız ve soyadınız",form_company:"Şirket",form_company_ph:"Şirket adınız",form_email:"E-posta",form_phone:"Telefon",form_interest:"Hangi Hizmetle İlgileniyorsunuz?",form_select:"Hizmet seçiniz...",form_opt1:"Yeşil Çekirdek İhracatı",form_opt2:"Toptan Dağıtım",form_opt3:"Kavurma Hammaddeleri",form_opt4:"Kafe Franchising",form_opt5:"Sektör Danışmanlığı",form_opt6:"CoffeePro Platformu",form_opt7:"Ortaklık / Diğer",form_msg:"Mesajınız",form_msg_ph:"İhtiyaçlarınızı ve beklentilerinizi kısaca paylaşın...",form_submit:"Talebimi Gönder →",
+            cta_label:"Hazır mısınız?",cta_title:'Kahve Yolculuğunuz<br><span class="blue-text">Burada Başlıyor</span>',cta_sub:"Kahve sektöründe uçtan uca güvenilir bir çözüm ortağı arayan yüzlerce işletme gibi siz de ASAD Gıda Sanayi ailesine katılın.",cta_btn1:"Size Özel Teklif Alın",cta_btn2:"Markalarımızı Keşfedin",
+            footer_desc:"Türkiye'nin lider kahve sanayi grubu. Yeşil çekirdekten dünyanın dört bir yanındaki fincanlara — markalar, ortaklıklar ve sürdürülebilir büyüme inşa ediyoruz.",
+            ft_wholesale:"Toptan Satış",ft_roasting:"Kavurma Malzemeleri",ft_consult:"Danışmanlık",ft_company:"Kurumsal",ft_aboutus:"Hakkımızda",
+            footer_copy:"© 2026 ASAD Gıda Sanayi Ltd. Tüm hakları saklıdır.",ft_privacy:"Gizlilik Politikası",ft_terms:"Kullanım Koşulları",ft_cookies:"Çerez Politikası"
         },
         ar:{
-            nav_about:"من نحن",nav_services:"الخدمات",nav_brands:"علاماتنا التجارية",nav_global:"الانتشار العالمي",nav_process:"سلسلة التوريد",nav_contact:"اتصل بنا",nav_cta:"احصل على عرض سعر",
-            hero_badge:"مجموعة القهوة الرائدة في تركيا",
-            hero_title:'من أصول الحبوب<br>إلى <span class="accent">الأكواب العالمية</span>',
-            hero_desc:"أسد للصناعات الغذائية هي القوة الدافعة وراء أبرز علامات القهوة التركية — من تصدير البن الأخضر والتوزيع بالجملة إلى توريد مواد التحميص وامتياز المقاهي والاستشارات المتخصصة.",
-            hero_cta1:"اكتشف خدماتنا",hero_cta2:"محفظة علاماتنا",hero_est:"تأسست في تركيا",
-            hero_fc1:"جملة B2B",hero_fc2:"تجزئة متميزة",hero_fc3:"منصة تقنية",
-            stat1:"علامات تجارية",stat2:"دولة تصدير",stat3:"طن سنوياً",stat4:"تغطية شاملة",
-            about_label:"قصتنا",about_title:'مبنية على <span class="blue-text">الخبرة</span>،<br>مدفوعة بالشغف',
-            about_p1:"انطلقت أسد للصناعات الغذائية برؤية واضحة: بناء أشمل مجموعة متخصصة في صناعة القهوة بتركيا. نورّد أجود حبوب البن الأخضر من مصادرها الأصلية ونقدم تحميصاً استثنائياً للمستهلكين حول العالم، ونحن حاضرون في كل حلقة من سلسلة القيمة.",
-            about_p2:"بصفتنا الشركة الأم لـ ToptanKahveler وFrancesCoffee وCoffeePro، أسسنا منظومة متكاملة تخدم تجار الجملة والمستهلكين المميزين والجيل الجديد من رواد أعمال المقاهي — كل ذلك تحت مظلة واحدة.",
-            about_overlay:"التميز من المزرعة إلى الفنجان",about_overlay_sub:"تكامل رأسي منذ اليوم الأول",
+            nav_about:"من نحن",nav_services:"خدماتنا",nav_brands:"علاماتنا",nav_global:"حضورنا العالمي",nav_process:"سلسلة التوريد",nav_contact:"تواصل معنا",nav_cta:"اطلب عرض سعر",
+            hero_badge:"مجموعة صناعة القهوة الأولى في تركيا",
+            hero_title:'من قلب المزارع<br>إلى <span class="accent">فناجين العالم</span>',
+            hero_desc:"أسد للصناعات الغذائية هي المحرك الأساسي وراء أبرز علامات القهوة التركية الطموحة. نقدم خدمات متكاملة تشمل تصدير البن الأخضر، والتوزيع بالجملة، وتوريد خامات التحميص، وامتياز المقاهي، والاستشارات المتخصصة في قطاع القهوة.",
+            hero_cta1:"تعرّف على خدماتنا",hero_cta2:"استعرض علاماتنا التجارية",hero_est:"تأسست في تركيا",
+            hero_fc1:"تجارة الجملة B2B",hero_fc2:"تجزئة فاخرة",hero_fc3:"منصة رقمية",
+            stat1:"علامة تجارية مملوكة",stat2:"دولة نصدّر إليها",stat3:"طن سنوياً",stat4:"تغطية قطاعية شاملة",
+            about_label:"حكايتنا",about_title:'أُسست على <span class="blue-text">الخبرة</span>،<br>وتنمو بالشغف',
+            about_p1:"انطلقت أسد للصناعات الغذائية بهدف واضح: أن تصبح المجموعة الأشمل والأكثر تكاملاً في صناعة القهوة بتركيا. نختار أجود حبوب البن الأخضر من مصادرها الأصلية حول العالم، ونحوّلها إلى تجربة قهوة استثنائية تصل إلى المستهلكين في كل مكان.",
+            about_p2:"بوصفنا الشركة الأم لكلٍّ من ToptanKahveler وFrancesCoffee وCoffeePro، بنينا منظومة عمل متكاملة تلبّي احتياجات تجار الجملة، والمستهلكين الباحثين عن التميز، والجيل الجديد من روّاد أعمال المقاهي — كل ذلك تحت سقف واحد.",
+            about_overlay:"تميّز من المزرعة حتى الفنجان",about_overlay_sub:"تكامل رأسي منذ اللحظة الأولى",
             pillar1_t:"التوريد من المنشأ",pillar1_d:"شراكات مباشرة مع مزارع في أفريقيا وآسيا والأمريكتين",
-            pillar2_t:"ضمان الجودة",pillar2_d:"تذوق بمعايير SCA ورقابة صارمة في كل مرحلة",
-            pillar3_t:"الحجم والسرعة",pillar3_d:"طاقة 500+ طن مع بنية تحتية لوجستية عالمية",
-            pillar4_t:"التركيز على الشراكة",pillar4_d:"علاقات طويلة الأمد مبنية على الثقة والنمو المتبادل",
-            cdiv_title:"تحميص مثالي، توريد واعٍ",cdiv_sub:"من مزارع الحبوب الخضراء إلى محمصتك — نسد كل فجوة في سلسلة توريد القهوة.",
-            svc_label:"ماذا نفعل",svc_title:'حلول قهوة <span class="blue-text">شاملة ومتكاملة</span>',svc_sub:"من توريد حبوب البن الأخضر إلى عمليات امتياز المقاهي — نغطي سلسلة القيمة الكاملة لصناعة القهوة.",
-            svc1_t:"تصدير الحبوب الخضراء",svc1_d:"توريد مباشر من المنشأ وتصدير دولي لحبوب البن الأخضر الممتازة من أرقى مناطق الزراعة في العالم.",
-            svc2_t:"التوزيع بالجملة",svc2_d:"إمداد بالجملة لحبوب البن الأخضر والمحمص للمحامص وتجار التجزئة وشركات الضيافة في تركيا وخارجها.",
-            svc3_t:"مواد التحميص الخام",svc3_d:"إمداد كامل بالمواد الخام لعمليات التحميص — من الحبوب الخضراء إلى مواد التعبئة وتوريد المعدات.",
-            svc4_t:"امتياز المقاهي",svc4_d:"حلول امتياز مقاهي جاهزة — من تصميم المفهوم إلى العمليات اليومية — تحت أطر علاماتنا المثبتة.",
-            svc5_t:"الاستشارات الصناعية",svc5_d:"خدمات استشارية متخصصة للشركات الداخلة أو المتوسعة في صناعة القهوة — الاستراتيجية والتوريد والعمليات.",
-            svc6_t:"تقنيات القهوة والرقمنة",svc6_d:"عبر CoffeePro، نبني منصات وأدوات رقمية تعمل على تحديث عمليات صناعة القهوة وتجارب العملاء.",
-            svc1_f1:"دفعات أحادية المنشأ ومتخصصة",svc1_f2:"علاقات مباشرة مع المزارع",svc1_f3:"توثيق تصدير كامل",svc1_f4:"لوجستيات شحن عالمية",
-            svc2_f1:"أسعار جملة تنافسية",svc2_f2:"إمداد ثابت الجودة",svc2_f3:"أحجام طلبات مرنة",svc2_f4:"إدارة حسابات مخصصة",
-            svc3_f1:"تشكيلة حبوب مختارة بعناية",svc3_f2:"إرشاد ملفات التحميص",svc3_f3:"حلول التعبئة والتغليف",svc3_f4:"توريد المعدات",
-            svc4_f1:"نماذج أعمال مثبتة",svc4_f2:"تحليل الموقع والتجهيز",svc4_f3:"برامج تدريب الموظفين",svc4_f4:"دعم تشغيلي مستمر",
-            svc5_f1:"استراتيجية دخول السوق",svc5_f2:"تحسين سلسلة التوريد",svc5_f3:"تطوير العلامة التجارية",svc5_f4:"تدقيق العمليات",
-            svc6_f1:"منصات طلب B2B",svc6_f2:"إدارة المخزون",svc6_f3:"تطبيقات تفاعل العملاء",svc6_f4:"رؤى مبنية على البيانات",
-            brand_label:"محفظة العلامات",brand_title:'ثلاث علامات، <span class="blue-text">رؤية واحدة</span>',brand_sub:"كل علامة تجارية تخدم شريحة سوقية مميزة، ومعاً تغطي الطيف الكامل لصناعة القهوة.",
-            brand1_badge:"جملة B2B",brand1_desc:"منصة القهوة الرائدة بالجملة في تركيا — تربط المحامص والمقاهي والموزعين بحبوب عالية الجودة بأسعار جملة تنافسية.",brand1_link:"زيارة ToptanKahveler",
-            brand2_badge:"تجزئة متميزة",brand2_desc:"علامة قهوة استهلاكية متميزة تقدم حبوب أحادية المنشأ وخلطات مميزة وتجربة قهوة راقية لعشاق القهوة المميزين.",brand2_link:"زيارة FrancesCoffee",
-            brand3_badge:"منصة تقنية",brand3_desc:"العمود الفقري الرقمي لأعمال القهوة الحديثة — منصة وتطبيق جوال يبسط الطلب والعمليات وتفاعل العملاء.",brand3_link:"اعرف المزيد",
-            bdiv1:"بلد منشأ",bdiv2:"طن سنوياً",bdiv3:"وجهة تصدير",
-            global_label:"التواجد العالمي",global_title:'التوريد والإمداد<br><span class="blue-text">عبر القارات</span>',global_sub:"مع شراكات توريد في أفريقيا وأمريكا الوسطى وجنوب شرق آسيا، وطرق تصدير تصل إلى أكثر من 30 دولة، تعمل أسد كشريك توريد قهوة عالمي حقيقي.",
-            reg1_n:"تركيا",reg1_d:"المقر الرئيسي والعمليات",reg2_n:"الاتحاد الأوروبي",reg2_d:"التصدير والجملة",reg3_n:"شرق أفريقيا",reg3_d:"التوريد من المنشأ",reg4_n:"أمريكا الجنوبية",reg4_d:"التوريد من المنشأ",reg5_n:"الشرق الأوسط",reg5_d:"سوق التصدير",reg6_n:"جنوب شرق آسيا",reg6_d:"التوريد من المنشأ",
+            pillar2_t:"ضمان الجودة",pillar2_d:"تذوّق وفق معايير SCA ورقابة دقيقة في كل مرحلة",
+            pillar3_t:"القدرة والسرعة",pillar3_d:"طاقة إنتاجية تتجاوز 500 طن مع بنية لوجستية عالمية",
+            pillar4_t:"روح الشراكة",pillar4_d:"علاقات طويلة الأمد قائمة على الثقة المتبادلة والنمو المشترك",
+            cdiv_title:"تحميص متقن، توريد مسؤول",cdiv_sub:"من حقول البن الأخضر إلى محمصتك — نملأ كل فراغ في سلسلة توريد القهوة.",
+            svc_label:"ما نقدّمه",svc_title:'حلول قهوة <span class="blue-text">متكاملة من الألف إلى الياء</span>',svc_sub:"من توريد حبوب البن الأخضر وصولاً إلى تشغيل امتيازات المقاهي — نغطي سلسلة القيمة الكاملة لصناعة القهوة.",
+            svc1_t:"تصدير البن الأخضر",svc1_d:"نوفر حبوب بن أخضر فاخرة من أرقى مناطق الزراعة حول العالم، مع توريد مباشر من المنشأ وتصدير دولي موثوق.",
+            svc2_t:"التوزيع بالجملة",svc2_d:"نزوّد المحامص وتجار التجزئة وقطاع الضيافة بكميات كبيرة من البن الأخضر والمحمّص داخل تركيا وخارجها.",
+            svc3_t:"خامات التحميص",svc3_d:"نوفر كل ما تحتاجه عمليات التحميص — من الحبوب الخضراء ومواد التعبئة والتغليف إلى توريد المعدات المتخصصة.",
+            svc4_t:"امتياز المقاهي",svc4_d:"حلول امتياز جاهزة للتنفيذ — من تصميم المفهوم وحتى التشغيل اليومي — ضمن أطر علاماتنا التجارية المُجرّبة.",
+            svc5_t:"الاستشارات القطاعية",svc5_d:"خدمات استشارية احترافية للشركات التي تدخل سوق القهوة أو تسعى للتوسع فيه — نغطي الاستراتيجية والتوريد والتشغيل.",
+            svc6_t:"تقنيات القهوة الرقمية",svc6_d:"من خلال منصة CoffeePro، نطوّر أدوات وحلولاً رقمية تُحدّث عمليات صناعة القهوة وتُحسّن تجربة العملاء.",
+            svc1_f1:"دفعات أحادية المنشأ ومتخصصة",svc1_f2:"علاقات مباشرة مع المزارعين",svc1_f3:"إعداد وثائق التصدير بالكامل",svc1_f4:"شبكة شحن ولوجستيات عالمية",
+            svc2_f1:"أسعار جملة تنافسية ومدروسة",svc2_f2:"جودة ثابتة في كل شحنة",svc2_f3:"مرونة في أحجام الطلبات",svc2_f4:"مدير حساب مخصص لكل عميل",
+            svc3_f1:"تشكيلة حبوب منتقاة بعناية فائقة",svc3_f2:"إرشاد متخصص لملفات التحميص",svc3_f3:"حلول تعبئة وتغليف متنوعة",svc3_f4:"توريد معدات ومكائن التحميص",
+            svc4_f1:"نماذج أعمال ناجحة ومُثبتة",svc4_f2:"دراسة الموقع والتصميم الداخلي",svc4_f3:"برامج تدريب شاملة للفريق",svc4_f4:"دعم تشغيلي مستمر بعد الافتتاح",
+            svc5_f1:"استراتيجيات دخول السوق والتوسع",svc5_f2:"تحسين كفاءة سلسلة التوريد",svc5_f3:"بناء وتطوير العلامة التجارية",svc5_f4:"تدقيق شامل للعمليات التشغيلية",
+            svc6_f1:"منصات طلب إلكترونية للشركات",svc6_f2:"أنظمة متقدمة لإدارة المخزون",svc6_f3:"تطبيقات لتعزيز ولاء العملاء",svc6_f4:"تحليلات ورؤى مبنية على البيانات",
+            brand_label:"محفظة العلامات التجارية",brand_title:'ثلاث علامات، <span class="blue-text">رؤية موحّدة</span>',brand_sub:"كل علامة تجارية تخدم شريحة سوقية متميزة، وتتكامل معاً لتغطية الطيف الكامل لصناعة القهوة.",
+            brand1_badge:"تجارة جملة B2B",brand1_desc:"المنصة الرائدة لتجارة القهوة بالجملة في تركيا — تجمع بين المحامص والمقاهي والموزعين وتوفر لهم حبوباً عالية الجودة بأسعار جملة تنافسية.",brand1_link:"زيارة ToptanKahveler",
+            brand2_badge:"تجزئة فاخرة",brand2_desc:"علامة قهوة استهلاكية راقية تقدم حبوباً أحادية المنشأ وخلطات مميزة وتجربة قهوة استثنائية تُرضي أرفع الأذواق.",brand2_link:"زيارة FrancesCoffee",
+            brand3_badge:"منصة رقمية",brand3_desc:"البنية الرقمية التي تحتاجها أعمال القهوة العصرية — منصة وتطبيق جوال يُبسّط إدارة الطلبات والعمليات والتواصل مع العملاء.",brand3_link:"اعرف المزيد",
+            bdiv1:"بلد منشأ للتوريد",bdiv2:"طن تُعالَج سنوياً",bdiv3:"وجهة تصدير حول العالم",
+            global_label:"حضورنا العالمي",global_title:'توريد وإمداد<br><span class="blue-text">يمتد عبر القارات</span>',global_sub:"بفضل شراكاتنا في أفريقيا وأمريكا الوسطى وجنوب شرق آسيا، وطرق تصدير تصل إلى أكثر من 30 دولة، نعمل كشريك توريد قهوة عالمي بكل معنى الكلمة.",
+            reg1_n:"تركيا",reg1_d:"المقر الرئيسي ومركز العمليات",reg2_n:"الاتحاد الأوروبي",reg2_d:"التصدير وتجارة الجملة",reg3_n:"شرق أفريقيا",reg3_d:"منطقة توريد المنشأ",reg4_n:"أمريكا الجنوبية",reg4_d:"منطقة توريد المنشأ",reg5_n:"الشرق الأوسط",reg5_d:"سوق تصدير متنامٍ",reg6_n:"جنوب شرق آسيا",reg6_d:"منطقة توريد المنشأ",
             map_turkey:"تركيا - المقر",map_europe:"أوروبا",map_mena:"الشرق الأوسط",map_asia:"آسيا",map_africa:"أفريقيا",map_americas:"الأمريكتان",
-            proc_label:"عمليتنا",proc_title:'من <span class="blue-text">المزرعة إلى الفنجان</span>، نتحكم في السلسلة',proc_sub:"كل خطوة في الرحلة تُدار بدقة، لضمان الجودة والاتساق في كل نقطة اتصال.",
-            proc1_t:"التوريد من المنشأ",proc1_d:"شراكات مباشرة مع مزارع في إثيوبيا والبرازيل وكولومبيا وغيرها",
-            proc2_t:"مراقبة الجودة",proc2_d:"تذوق بمعايير SCA، تحليل الرطوبة وفحص العيوب",
-            proc3_t:"اللوجستيات والتصدير",proc3_d:"شحن بتحكم في درجة الحرارة مع توثيق كامل",
-            proc4_t:"المعالجة والتحميص",proc4_d:"ملفات تحميص مخصصة حسب مواصفات العميل",
-            proc5_t:"التوزيع",proc5_d:"توصيل متعدد القنوات — جملة وتجزئة ورقمي",
-            cert1:"شهادة SCA",cert2:"خيارات عضوية",cert3:"تجارة عادلة",cert4:"متوافق مع ISO",cert5:"معايير HACCP",cert6:"تحالف الغابات المطيرة",
-            why_label:"لماذا تختارنا",why_title:'ميزة <span class="blue-text">أسد</span>',
-            why1_t:"تكامل رأسي",why1_d:"نمتلك ونشغل عبر كل مرحلة من سلسلة قيمة القهوة",
-            why2_t:"شبكة عالمية",why2_d:"توريد من 15+ منشأ، تصدير إلى 30+ دولة",
-            why3_t:"قيادة الابتكار",why3_d:"CoffeePro يجلب التحول الرقمي لتجارة القهوة التقليدية",
-            why4_t:"نهج الشراكة",why4_d:"ننمو جنباً إلى جنب مع عملائنا بحلول مرنة وقابلة للتوسع",
-            trust_label:"شهادات العملاء",trust_title:'ماذا يقول <span class="blue-text">شركاؤنا</span>',
-            trust1_q:'"جودة واتساق حبوب البن الأخضر من أسد كانت استثنائية. أصبحوا موردنا الرئيسي لجميع عملياتنا الأوروبية."',trust1_role:"رئيس التوريد، Vienna Roasters",
-            trust2_q:'"فريق استشارات الامتياز ساعدنا في إطلاق ثلاثة مواقع في ستة أشهر. دليلهم التشغيلي من الطراز العالمي."',trust2_role:"مالك امتياز، إسطنبول",
-            trust3_q:'"منصة ToptanKahveler جعلت طلبات الجملة لدينا سلسة. نسبة الجودة إلى السعر لا مثيل لها في السوق."',trust3_role:"مدير العمليات، Gulf Beverages",
-            contact_label:"تواصل معنا",contact_title:'لنبنِ<br><span style="background:linear-gradient(135deg,#93C5FD,#BFDBFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">شيئاً معاً</span>',contact_sub:"سواء كنت تبحث عن حبوب خضراء بالجملة أو فرص امتياز أو استشارات صناعية — يسعدنا أن نسمع منك.",
-            ci1_t:"المقر الرئيسي",ci1_d:"إسطنبول، تركيا",ci2_t:"البريد الإلكتروني",ci3_t:"المواقع الإلكترونية",
-            form_title:"اطلب عرض سعر",form_name:"الاسم الكامل",form_name_ph:"اسمك",form_company:"الشركة",form_company_ph:"اسم الشركة",form_email:"البريد الإلكتروني",form_phone:"الهاتف",form_interest:"أنا مهتم بـ",form_select:"اختر خدمة...",form_opt1:"تصدير الحبوب الخضراء",form_opt2:"التوزيع بالجملة",form_opt3:"مواد التحميص الخام",form_opt4:"امتياز المقاهي",form_opt5:"الاستشارات الصناعية",form_opt6:"منصة CoffeePro",form_opt7:"شراكة / أخرى",form_msg:"الرسالة",form_msg_ph:"أخبرنا عن متطلباتك...",form_submit:"إرسال الاستفسار ←",
-            cta_label:"هل أنت مستعد للبدء؟",cta_title:'رحلتك في القهوة<br><span class="blue-text">تبدأ هنا</span>',cta_sub:"انضم إلى مئات الشركات التي تثق بأسد للصناعات الغذائية كشريك متكامل في صناعة القهوة.",cta_btn1:"احصل على عرضك المخصص",cta_btn2:"اكتشف علاماتنا",
-            footer_desc:"مجموعة القهوة الرائدة في تركيا — من حبوب البن الخضراء إلى فناجين العالم. نبني العلامات التجارية والشراكات ونقود التقدم.",
-            ft_wholesale:"البيع بالجملة",ft_roasting:"مواد التحميص",ft_consult:"الاستشارات",ft_company:"الشركة",ft_aboutus:"من نحن",
-            footer_copy:"© 2026 أسد للصناعات الغذائية المحدودة. جميع الحقوق محفوظة.",ft_privacy:"سياسة الخصوصية",ft_terms:"شروط الخدمة",ft_cookies:"سياسة ملفات تعريف الارتباط"
+            proc_label:"آلية عملنا",proc_title:'من <span class="blue-text">المزرعة إلى الفنجان</span>، نُدير كل حلقة',proc_sub:"نُشرف على كل خطوة في رحلة القهوة بدقة متناهية، لنضمن الجودة والاتساق في كل نقطة تماس.",
+            proc1_t:"التوريد من المنشأ",proc1_d:"نعمل مباشرة مع مزارع في إثيوبيا والبرازيل وكولومبيا وغيرها",
+            proc2_t:"مراقبة الجودة",proc2_d:"تذوّق بمعايير SCA، وتحليل رطوبة، وفحص دقيق للعيوب",
+            proc3_t:"اللوجستيات والتصدير",proc3_d:"شحن بدرجة حرارة مضبوطة مع توثيق تصديري كامل",
+            proc4_t:"المعالجة والتحميص",proc4_d:"نُصمّم ملف تحميص مخصص وفقاً لمتطلبات كل عميل",
+            proc5_t:"التوزيع",proc5_d:"توصيل عبر قنوات متعددة — جملة وتجزئة ومنصات رقمية",
+            cert1:"شهادة SCA",cert2:"خيارات عضوية معتمدة",cert3:"تجارة عادلة",cert4:"توافق مع معايير ISO",cert5:"معايير HACCP",cert6:"تحالف الغابات المطيرة",
+            why_label:"لماذا نحن؟",why_title:'ما يميّز <span class="blue-text">أسد</span>',
+            why1_t:"تكامل رأسي كامل",why1_d:"نمتلك ونُدير كل مرحلة في سلسلة قيمة القهوة بأنفسنا",
+            why2_t:"شبكة عالمية واسعة",why2_d:"نورّد من أكثر من 15 منشأ ونُصدّر إلى أكثر من 30 دولة",
+            why3_t:"ريادة في الابتكار",why3_d:"منصة CoffeePro تقود التحول الرقمي في تجارة القهوة التقليدية",
+            why4_t:"فلسفة الشراكة الحقيقية",why4_d:"ننمو مع عملائنا ونقدم حلولاً مرنة تتوسع مع طموحاتهم",
+            trust_label:"ماذا يقول عملاؤنا",trust_title:'آراء <span class="blue-text">شركائنا</span>',
+            trust1_q:'"تفوّقت أسد في جودة البن الأخضر واتساقه بشكل لافت. اليوم هم المورد الرئيسي لجميع عملياتنا في أوروبا."',trust1_role:"رئيس قسم التوريد، Vienna Roasters",
+            trust2_q:'"بفضل فريق استشارات الامتياز، تمكّنا من افتتاح ثلاثة فروع خلال ستة أشهر فقط. دليلهم التشغيلي من أرفع المعايير العالمية."',trust2_role:"صاحب امتياز، إسطنبول",
+            trust3_q:'"منصة ToptanKahveler حوّلت طلبات الجملة لدينا إلى تجربة سلسة تماماً. نسبة الجودة مقابل السعر لا نظير لها في السوق."',trust3_role:"مدير العمليات، Gulf Beverages",
+            contact_label:"تواصل معنا",contact_title:'لنبنِ معاً<br><span style="background:linear-gradient(135deg,#93C5FD,#BFDBFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">شراكة ناجحة</span>',contact_sub:"سواء كنت تبحث عن حبوب بن أخضر بالجملة، أو فرص امتياز، أو استشارات متخصصة في القطاع — نحن هنا لمساعدتك.",
+            ci1_t:"المقر الرئيسي",ci1_d:"حي صلاح الدين الأيوبي، شارع 1632، رقم 21، 34510 إسنيورت/إسطنبول، تركيا",ci2_t:"البريد الإلكتروني",ci3_t:"مواقعنا الإلكترونية",ci4_t:"الهاتف",
+            footer_address:"حي صلاح الدين الأيوبي، شارع 1632، رقم 21، 34510 إسنيورت/إسطنبول",
+            form_title:"اطلب عرض أسعار",form_name:"الاسم الكامل",form_name_ph:"أدخل اسمك الكامل",form_company:"اسم الشركة",form_company_ph:"أدخل اسم شركتك",form_email:"البريد الإلكتروني",form_phone:"رقم الهاتف",form_interest:"ما الخدمة التي تهمّك؟",form_select:"اختر الخدمة المطلوبة...",form_opt1:"تصدير البن الأخضر",form_opt2:"التوزيع بالجملة",form_opt3:"خامات التحميص",form_opt4:"امتياز المقاهي",form_opt5:"الاستشارات القطاعية",form_opt6:"منصة CoffeePro",form_opt7:"شراكة أو استفسار آخر",form_msg:"رسالتك",form_msg_ph:"شاركنا تفاصيل احتياجاتك ومتطلباتك...",form_submit:"أرسل طلبك ←",
+            cta_label:"مستعد للانطلاق؟",cta_title:'رحلتك مع القهوة<br><span class="blue-text">تبدأ من هنا</span>',cta_sub:"انضم إلى مئات الشركات التي اختارت أسد للصناعات الغذائية شريكاً موثوقاً ومتكاملاً في عالم القهوة.",cta_btn1:"احصل على عرضك المخصص",cta_btn2:"تعرّف على علاماتنا",
+            footer_desc:"مجموعة القهوة الرائدة في تركيا — من حبوب البن الخضراء إلى فناجين العالم. نبني علامات تجارية قوية، ونُرسي شراكات متينة، ونقود مسيرة التقدم.",
+            ft_wholesale:"تجارة الجملة",ft_roasting:"خامات التحميص",ft_consult:"الاستشارات",ft_company:"الشركة",ft_aboutus:"من نحن",
+            footer_copy:"© 2026 أسد للصناعات الغذائية المحدودة. جميع الحقوق محفوظة.",ft_privacy:"سياسة الخصوصية",ft_terms:"الشروط والأحكام",ft_cookies:"سياسة ملفات تعريف الارتباط"
         }};
 
         // ── LANGUAGE SWITCHER ──
